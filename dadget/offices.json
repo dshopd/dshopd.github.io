@@ -1,0 +1,122 @@
+{
+  "1": [
+    {
+      "name": "ТРЦ «Охотный Ряд»",
+      "address": "Тверская, 13",
+      "metro": "Маяковская",
+      "phone": "8 495 554-88-99",
+      "worktime_weekdays": "9:00-20:00",
+      "worktime_weekends": "10:00-18:00"
+    },
+    {
+      "name": "ТРЦ «Метрополис»",
+      "address": "Ленинградское шоссе, 16Ac1",
+      "metro": "Войковская",
+      "phone": "8 495 554-88-99",
+      "worktime_weekdays": "9:00-20:00",
+      "worktime_weekends": "10:00-18:00"
+    },
+    {
+      "name": "ТРЦ «Атриум»",
+      "address": "Земляной Вал, 10",
+      "metro": "Курская",
+      "phone": "8 495 554-88-99",
+      "worktime_weekdays": "9:00-20:00",
+      "worktime_weekends": "10:00-18:00"
+    },
+    {
+      "name": "Золотой Вавилон",
+      "address": "Профсоюзная, 10",
+      "metro": "Академическая",
+      "phone": "8 495 554-88-99",
+      "worktime_weekdays": "9:00-20:00",
+      "worktime_weekends": "10:00-18:00"
+    },
+    {
+      "name": "Пятая точка",
+      "address": "Вешняковская, 32",
+      "metro": "Выхино",
+      "phone": "8 495 554-88-99",
+      "worktime_weekdays": "9:00-20:00",
+      "worktime_weekends": "10:00-18:00"
+    }
+  ],
+  "2": [
+    {
+      "name": "Первый магазин",
+      "address": "Малышева, 28",
+      "metro": "Маяковская",
+      "phone": "8 495 554-88-99",
+      "worktime_weekdays": "9:00-20:00",
+      "worktime_weekends": "10:00-18:00"
+    },
+    {
+      "name": "Второй магазин",
+      "address": "Куйбышева, 14",
+      "metro": "Войковская",
+      "phone": "8 495 554-88-99",
+      "worktime_weekdays": "9:00-20:00",
+      "worktime_weekends": "10:00-18:00"
+    },
+    {
+      "name": "Третий",
+      "address": "Декабристов, 71",
+      "metro": "Курская",
+      "phone": "8 495 554-88-99",
+      "worktime_weekdays": "9:00-20:00",
+      "worktime_weekends": "10:00-18:00"
+    }
+  ],
+  "3": [
+    {
+      "name": "ТРЦ «Звездный Ряд»",
+      "address": "Бутлерова, 54А",
+      "metro": "Маяковская",
+      "phone": "8 495 554-88-99",
+      "worktime_weekdays": "9:00-20:00",
+      "worktime_weekends": "10:00-18:00"
+    },
+    {
+      "name": "ТРЦ «Астрополис»",
+      "address": "Астрономическая, 7",
+      "metro": "Войковская",
+      "phone": "8 495 554-88-99",
+      "worktime_weekdays": "9:00-20:00",
+      "worktime_weekends": "10:00-18:00"
+    },
+    {
+      "name": "ТРЦ «Курский»",
+      "address": "Профсоюзная, 9",
+      "metro": "Курская",
+      "phone": "8 495 554-88-99",
+      "worktime_weekdays": "9:00-20:00",
+      "worktime_weekends": "10:00-18:00"
+    }
+  ],
+  "4": [
+    {
+      "name": "ТРЦ «Ряд»",
+      "address": "Садовая, 34",
+      "metro": "Маяковская",
+      "phone": "8 495 554-88-99",
+      "worktime_weekdays": "9:00-20:00",
+      "worktime_weekends": "10:00-18:00"
+    },
+    {
+      "name": "ТРЦ «Гелиополис»",
+      "address": "Гороховая, 28",
+      "metro": "Войковская",
+      "phone": "8 495 554-88-99",
+      "worktime_weekdays": "9:00-20:00",
+      "worktime_weekends": "10:00-18:00"
+    },
+    {
+      "name": "ТРЦ «Оракул»",
+      "address": "Невский проспект, 6",
+      "metro": "Курская",
+      "phone": "8 495 554-88-99",
+      "worktime_weekdays": "9:00-20:00",
+      "worktime_weekends": "10:00-18:00"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+<div class="form">
+    <div class="form-group form-label">
+        Заполните адрес доставки
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <input type="text" name="street" class="form-control" placeholder="Улица">
+            </div>
+            <div class="form-group">
+                <input type="text" name="block1" class="form-control" placeholder="Корпус">
+            </div>
+            <div class="form-group">
+                <input type="text" name="apartment" class="form-control" placeholder="Квартира">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <input type="text" name="building" class="form-control" placeholder="Дом">
+            </div>
+            <div class="form-group">
+                <input type="text" name="block2" class="form-control" placeholder="Строение">
+            </div>
+            <div class="form-group">
+                <input type="text" name="zip" class="form-control" data-mask="zip" placeholder="Индекс">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <textarea name="message" class="form-control" placeholder="Комментарий"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <div class="form-group form-label">
+                Дата доставки
+            </div>
+            <div class="form-group">
+                <input type="text" name="date" class="form-control datepicker">
+            </div>
+        </div>
+        <div class="col-md-9 col-md-offset-1">
+            <div class="form-group form-label">
+                Время доставки
+            </div>
+            <div class="form-group cart-delivery-time">
+                <label class="input-radio">
+                    <input type="radio" name="time" value="1" checked>
+                    <span>Утро<br>09:00-13:00</span>
+                </label>
+                <label class="input-radio">
+                    <input type="radio" name="time" value="2">
+                    <span>День<br>13:00-17:00</span>
+                </label>
+                <label class="input-radio">
+                    <input type="radio" name="time" value="3">
+                    <span>Вечер<br>17:00-19:00</span>
+                </label>
+            </div>
+        </div>
+    </div>
+</div>

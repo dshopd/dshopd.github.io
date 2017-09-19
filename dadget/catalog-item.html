@@ -1,0 +1,1816 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Карточка товара | Даджет</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href=/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+    <!--build:css css/lib.min.css-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="js/plugins/lightbox/css/lightbox.css">
+    <!-- endbuild -->
+    <!--build:css css/main.min.css-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <!-- endbuild -->
+</head>
+
+<body class="page-product">
+
+<div class="wrapper">
+
+    <div class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="menu-top">
+                    <a href="#" class="menu-item" title="Доставка">Доставка</a>
+                    <a href="#" class="menu-item" title="Оплата">Оплата</a>
+                    <a href="#" class="menu-item" title="Где мой заказ">Где мой заказ</a>
+                    <a href="#" class="menu-item" title="Адреса магазинов">Адреса магазинов</a>
+                    <a href="#" class="menu-item" title="Гарантии">Гарантии</a>
+                    <div class="menu-item menu-lang">
+                        <a href="#" class="link link-image" title="Русский">
+                            <svg class="icon icon-countries-russia"><use xlink:href="images/icons.svg#countries-russia"></use></svg>
+                        </a>
+                        <a href="#" class="link link-image" title="Казахский">
+                            <svg class="icon icon-countries-kazakhstan"><use xlink:href="images/icons.svg#countries-kazakhstan"></use></svg>
+                        </a>
+                        <a href="#" class="link link-image" title="Белорусский">
+                            <svg class="icon icon-countries-belarus"><use xlink:href="images/icons.svg#countries-belarus"></use></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-base">
+            <div class="container">
+                <div class="header-toggle">
+                    <button class="button button-menu" data-toggle="modal" data-target="#modal-header">
+                        <svg class="icon icon-icon-menu"><use xlink:href="images/icons.svg#icon-menu"></use></svg>
+                    </button>
+                </div>
+                <div class="header-logo">
+
+                    <!--На главной просто картинка без ссылки-->
+                    <a href="index.html" class="link-image" title="Даджет">
+                        <img src="images/logo.svg" title="Даджет" alt="Даджет">
+                    </a>
+                    <!---->
+
+                </div>
+                <div class="header-item header-cities">
+                    <svg class="icon icon-icon-map-marker"><use xlink:href="images/icons.svg#icon-map-marker"></use></svg>
+                    <select name="select" data-header="Выбор города" data-cities>
+                        <option value="1">Москва</option>
+                    </select>
+                </div>
+                <div class="header-item header-phone">
+                    <a href="tel:88001001233" class="link" title="Позвонить">
+                        <svg class="icon icon-icon-phone"><use xlink:href="images/icons.svg#icon-phone"></use></svg>
+                        <span>8 800 100-12-33</span>
+                    </a>
+                </div>
+                <div class="header-item header-callback">
+                    <span class="link" data-toggle="modal" data-target="#modal-callback">
+                        <svg class="icon icon-icon-phone"><use xlink:href="images/icons.svg#icon-phone"></use></svg>
+                        <span>Обратный звонок</span>
+                    </span>
+                </div>
+                <div class="header-item header-profile">
+                    <a href="profile-data.html" class="link" title="Личный кабинет">
+                        <svg class="icon icon-icon-user"><use xlink:href="images/icons.svg#icon-user"></use></svg>
+                        <span>Личный кабинет</span>
+                    </a>
+                </div>
+                <div class="header-cart">
+                    <a href="cart.html" class="link link-image" title="Перейти в корзину">
+                        <svg class="icon icon-icon-cart"><use xlink:href="images/icons.svg#icon-cart"></use></svg>
+                        <span class="header-cart-qty">3</span>
+                        <span class="header-cart-sum">25 000 Р</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="content-menu">
+            <div class="container">
+
+                <!--На главной по-другому-->
+                <div class="content-overlay" data-menu-overlay="menu-catalog"></div>
+                <div class="content-menu-item menu-catalog-wrapper">
+                    <div class="menu-catalog-toggle" data-menu-toggle="menu-catalog" data-menu-overlay="#menu-catalog-overlay">
+                        <svg class="icon icon-icon-menu"><use xlink:href="images/icons.svg#icon-menu"></use></svg>
+                        Каталог товаров
+                    </div>
+                    <div class="menu-catalog" data-menu="menu-catalog">
+                        <a href="catalog.html" class="menu-item" title="Авто / Мото">Авто / Мото</a>
+                        <a href="catalog.html" class="menu-item" title="Безопасность">Безопасность</a>
+                        <a href="catalog.html" class="menu-item" title="Для дома и дачи">Для дома и дачи</a>
+                        <a href="catalog.html" class="menu-item" title="Для родителей">Для родителей</a>
+                        <a href="catalog.html" class="menu-item" title="Здоровая жизнь">Здоровая жизнь</a>
+                        <a href="catalog.html" class="menu-item" title="Аудио-видео">Аудио-видео</a>
+                        <a href="catalog.html" class="menu-item" title="Путешествия">Путешествия</a>
+                        <a href="catalog.html" class="menu-item" title="Сделай сам / DIY">Сделай сам / DIY</a>
+                        <a href="catalog.html" class="menu-item" title="Источники питания">Источники питания</a>
+                    </div>
+                </div>
+                <!---->
+
+                <div class="content-menu-item menu-special">
+                    <a href="catalog.html" class="menu-item" title="Новинки">Новинки</a>
+                    <a href="catalog.html" class="menu-item" title="Хиты">Хиты</a>
+                    <a href="catalog.html" class="menu-item" title="Подарки">Подарки</a>
+                    <a href="catalog.html" class="menu-item" title="Новогодние">Новогодние</a>
+                    <a href="catalog.html" class="menu-item" title="Коллекция 2018!">Коллекция 2018!</a>
+                </div>
+                <div class="content-search">
+                    <form id="form-search" action="search.html">
+                        <input type="text" name="search" class="form-control">
+                        <button type="submit" class="button">
+                            <svg class="icon icon-icon-search"><use xlink:href="images/icons.svg#icon-search"></use></svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+<div class="breadcrumbs">
+    <div class="container">
+        <a href="index.html">Главная</a>
+        <i class="separator"></i>
+        <a href="catalog.html">Каталог</a>
+        <i class="separator"></i>
+        <a href="catalog.html">Аудио-видео</a>
+        <i class="separator"></i>
+        <span>Наушники костной проводимости SOUNDAROUND 2S</span>
+    </div>
+</div>
+
+<div class="content-row">
+    <div class="container">
+        <div class="content-row-body">
+            <div class="content-row-header">
+                <h1 class="content-row-heading">
+                    Наушники костной проводимости SOUNDAROUND 2S
+                </h1>
+            </div>
+            <form id="form-product">
+                <div class="list-product-card-item">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5">
+                            <div class="product-image">
+                                <div class="list-item-image" id="carousel-product">
+                                    <div class="list-item-slide">
+                                        <img src="userdata/product1.png" title="3d принтер DADGET3D" alt="3d принтер DADGET3D">
+                                    </div>
+                                    <div class="list-item-slide">
+                                        <img src="userdata/product2.png" title="3d принтер DADGET3D" alt="3d принтер DADGET3D">
+                                    </div>
+                                    <div class="list-item-slide">
+                                        <img src="userdata/product3.png" title="3d принтер DADGET3D" alt="3d принтер DADGET3D">
+                                    </div>
+                                    <div class="list-item-slide">
+                                        <img src="userdata/product4.png" title="3d принтер DADGET3D" alt="3d принтер DADGET3D">
+                                    </div>
+                                    <div class="list-item-slide">
+                                        <img src="userdata/product5.png" title="3d принтер DADGET3D" alt="3d принтер DADGET3D">
+                                    </div>
+                                    <div class="list-item-slide">
+                                        <video src="userdata/video.mp4" controls></video>
+                                    </div>
+                                    <div class="list-item-slide">
+                                        <div id="spritespin"></div>
+                                    </div>
+                                </div>
+                                <div class="list-item-thumbs" id="carousel-product-thumbs">
+                                    <div class="list-item-slide">
+                                        <img src="userdata/product1.png" title="3d принтер DADGET3D" alt="3d принтер DADGET3D">
+                                    </div>
+                                    <div class="list-item-slide">
+                                        <img src="userdata/product2.png" title="3d принтер DADGET3D" alt="3d принтер DADGET3D">
+                                    </div>
+                                    <div class="list-item-slide">
+                                        <img src="userdata/product3.png" title="3d принтер DADGET3D" alt="3d принтер DADGET3D">
+                                    </div>
+                                    <div class="list-item-slide">
+                                        <img src="userdata/product4.png" title="3d принтер DADGET3D" alt="3d принтер DADGET3D">
+                                    </div>
+                                    <div class="list-item-slide">
+                                        <img src="userdata/product5.png" title="3d принтер DADGET3D" alt="3d принтер DADGET3D">
+                                    </div>
+                                    <div class="list-item-slide video">
+                                        <img src="userdata/product5.png" title="3d принтер DADGET3D" alt="3d принтер DADGET3D">
+                                    </div>
+                                    <div class="list-item-slide rotate">
+                                        <img src="userdata/360/frame1.jpg" title="360deg" alt="360deg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-5">
+                            <div class="product-info">
+                                <div class="list-item-special">
+                                    <div class="list-item-special-cell">
+                                        <span class="product-rating rating-3">
+                                            <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                            <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                            <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                            <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                            <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                        </span>
+                                    </div>
+                                    <div class="list-item-special-cell">
+                                        <span class="product-comment">
+                                            <svg class="icon icon-icon-comment"><use xlink:href="images/icons.svg#icon-comment"></use></svg> 33
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="list-item-text">
+                                    <p>
+                                        Слушаете музыку, аудиокниги или подкасты на улице? Уже приходилось в последний момент увернуться от машины на переходе, не услышав ее? Или, может быть, Вы хотели бы слушать музыку во время велосипедной прогулки или пробежки, но опасаетесь, что не услышите вовремя опасность?
+                                    </p>
+                                    <ul>
+                                        <li>Безопасно слушать музыку на улице</li>
+                                        <li>Вовремя распознать опасную ситуацию</li>
+                                        <li>Не закрывают ушной проход</li>
+                                        <li>Удивительно высокое качество звука</li>
+                                        <li>Гарнитура для телефонных звонков</li>
+                                        <li>Соединение по bluetooth</li>
+                                        <li>Отличный подарок!</li>
+                                        <li>Для спортсменов, велосипедистов, подростков</li>
+                                    </ul>
+                                </div>
+                                <div class="list-item-choose">
+                                    <span class="heading">Артикул:</span>
+                                    <span class="cell">2CMNK56</span>
+                                </div>
+                                <div class="list-item-choose">
+                                    <span class="heading">Цвет:</span>
+                                    <span class="cell">
+                                        <label class="input-radio-color">
+                                            <input type="radio" name="color" checked>
+                                            <span style="background-color: #4a148c;">фиолетовый</span>
+                                        </label>
+                                        <label class="input-radio-color">
+                                            <input type="radio" name="color">
+                                            <span style="background-color: #2196f3;">голубой</span>
+                                        </label>
+                                        <label class="input-radio-color">
+                                            <input type="radio" name="color">
+                                            <span style="background-color: #009688;">зеленый</span>
+                                        </label>
+                                        <label class="input-radio-color">
+                                            <input type="radio" name="color">
+                                            <span style="background-color: #607d8b;">серый</span>
+                                        </label>
+                                        <label class="input-radio-color">
+                                            <input type="radio" name="color">
+                                            <span style="background-color: #795548;">коричневый</span>
+                                        </label>
+                                    </span>
+                                </div>
+                                <div class="list-item-choose">
+                                    <span class="heading">Размер:</span>
+                                    <span class="cell">
+                                        <label class="input-radio-button">
+                                            <input type="radio" name="size" checked>
+                                            <span>Android</span>
+                                        </label>
+                                        <label class="input-radio-button">
+                                            <input type="radio" name="size">
+                                            <span>iOS</span>
+                                        </label>
+                                    </span>
+                                </div>
+                                <div class="list-item-row">
+                                    <a href="#" title="Похожие товары"><b>Похожие товары</b></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2">
+                            <div class="product-actions">
+                                <div class="list-item-price">
+                                    53 540 Р
+                                </div>
+                                <div class="list-item-actions">
+                                    <button class="button button-second">В корзину</button>
+                                    <button class="button button-first">Купить в 1 клик</button>
+                                </div>
+                                <div class="list-item-social">
+                                    <div>Поделиться в соцсетях</div>
+                                    <div class="content-social">
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://dadget.ru" class="link link-social"><svg class="icon icon-social-fb"><use xlink:href="images/icons.svg#social-fb"></use></svg></a>
+                                        <a href="https://vk.com/share.php?url=https://dadget.ru" class="link link-social"><svg class="icon icon-social-vk"><use xlink:href="images/icons.svg#social-vk"></use></svg></a>
+                                        <a href="#" class="link link-social"><svg class="icon icon-social-ok"><use xlink:href="images/icons.svg#social-ok"></use></svg></a>
+                                    </div>
+                                </div>
+                                <div class="list-item-row">
+                                    <div>Доставка в г. Москва</div>
+                                    <strong>300 Р</strong>
+                                </div>
+                                <div class="list-item-row">
+                                    <div>Самовывоз из магазина</div>
+                                    <strong>бесплатно</strong>
+                                </div>
+                                <div class="list-item-row">
+                                    <a href="#offices" class="button button-first scrollto" title="Выбрать магазин">Выбрать магазин</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="content-row">
+    <div class="container">
+        <div class="content-tabs" id="tabs">
+            <a href="#description">Описание</a>
+            <a href="#characteristics">Характеристики</a>
+            <a href="#accessories">Аксессуары</a>
+            <a href="#questions">Отзывы и вопросы</a>
+            <a href="#support">Поддержка</a>
+            <a href="#reviews">Обзоры</a>
+        </div>
+        <div class="content-row-body">
+            <div class="product-description" id="description" style="display: none;" data-tab>
+                <div class="product-description-quote">
+                    <h3>
+                        Lorem ipsum dolar
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.
+                    </p>
+                </div>
+                <div class="product-description-image">
+                    <img src="userdata/product-description.jpg" title="Наушники SOUNDAROUND 2S" alt="Наушники SOUNDAROUND 2S">
+                </div>
+                <div class="product-description-text">
+                    <h2>
+                        Наушники SOUNDAROUND 2S
+                    </h2>
+                    <p>
+                        Слушаете музыку, аудиокниги или подкасты на улице? Уже приходилось в последний момент увернуться от машины на переходе, не услышав ее? Или, может быть, Вы хотели бы слушать музыку во время велосипедной прогулки или пробежки, но опасаетесь, что не услышите вовремя опасность?
+                    </p>
+                    <p>
+                        Ваши дети ходят в наушниках по улице, а Вы переживаете за них?
+                    </p>
+                    <p>
+                        У нас есть для Вас решение: Наушники SoundAround. Работая по принципу костной проводимости, они передают звук прямо в ухо, не закрывая ушной проход. Вы будете слышать музыку и окружающие звуки одновременно. Невероятно, но это работает! Попробуйте сами!
+                    </p>
+                    <h2>
+                        Почему именно эти наушники?
+                    </h2>
+                    <p>
+                        Слушаете музыку, аудиокниги или подкасты на улице? Уже приходилось в последний момент увернуться от машины на переходе, не услышав ее? Или, может быть, Вы хотели бы слушать музыку во время велосипедной прогулки или пробежки, но опасаетесь, что не услышите вовремя опасность?
+                    </p>
+                    <p>
+                        Ваши дети ходят в наушниках по улице, а Вы переживаете за них?
+                    </p>
+                    <p>
+                        У нас есть для Вас решение: Наушники SoundAround. Работая по принципу костной проводимости, они передают звук прямо в ухо, не закрывая ушной проход. Вы будете слышать музыку и окружающие звуки одновременно. Невероятно, но это работает! Попробуйте сами!
+                    </p>
+                    <ul>
+                        <li>Безопасно слушать музыку на улице</li>
+                        <li>Вовремя распознать опасную ситуацию</li>
+                        <li>Не закрывают ушной проход</li>
+                        <li>Удивительно высокое качество звука</li>
+                        <li>Гарнитура для телефонных звонков</li>
+                        <li>Соединение по bluetooth</li>
+                        <li>Отличный подарок!</li>
+                        <li>Для спортсменов, велосипедистов, подростков</li>
+                    </ul>
+                    <div class="product-gallery">
+                        <div class="product-gallery-item">
+                            <span class="cell"><img src="userdata/product-gallery1.jpg" title="Наушники SOUNDAROUND 2S" alt="Наушники SOUNDAROUND 2S"></span>
+                        </div>
+                        <div class="product-gallery-item">
+                            <span class="cell"><img src="userdata/product-gallery2.jpg" title="Наушники SOUNDAROUND 2S" alt="Наушники SOUNDAROUND 2S"></span>
+                        </div>
+                        <div class="product-gallery-item">
+                            <span class="cell"><img src="userdata/product-gallery3.jpg" title="Наушники SOUNDAROUND 2S" alt="Наушники SOUNDAROUND 2S"></span>
+                        </div>
+                    </div>
+                    <h2>
+                        Наушники SOUNDAROUND 2S
+                    </h2>
+                    <p>
+                        Слушаете музыку, аудиокниги или подкасты на улице? Уже приходилось в последний момент увернуться от машины на переходе, не услышав ее? Или, может быть, Вы хотели бы слушать музыку во время велосипедной прогулки или пробежки, но опасаетесь, что не услышите вовремя опасность?
+                    </p>
+                    <p>
+                        Ваши дети ходят в наушниках по улице, а Вы переживаете за них?
+                    </p>
+                    <p>
+                        У нас есть для Вас решение: Наушники SoundAround. Работая по принципу костной проводимости, они передают звук прямо в ухо, не закрывая ушной проход. Вы будете слышать музыку и окружающие звуки одновременно. Невероятно, но это работает! Попробуйте сами!
+                    </p>
+                </div>
+            </div>
+            <div class="product-ttx" id="characteristics" style="display: none;" data-tab>
+                <div class="product-ttx-item">
+                    <span class="ttx-item-term">Используемая технология</span>
+                    <span class="ttx-item-def">Костная проводимость</span>
+                </div>
+                <div class="product-ttx-item">
+                    <span class="ttx-item-term">Связь со смартфоном</span>
+                    <span class="ttx-item-def">Bluethooth</span>
+                </div>
+                <div class="product-ttx-item">
+                    <span class="ttx-item-term">Количество микрофонов</span>
+                    <span class="ttx-item-def">2</span>
+                </div>
+                <div class="product-ttx-item">
+                    <span class="ttx-item-term">Время автономной работы, час</span>
+                    <span class="ttx-item-def">6</span>
+                </div>
+                <div class="product-ttx-item">
+                    <span class="ttx-item-term">Время в режиме ожидания, час</span>
+                    <span class="ttx-item-def">10</span>
+                </div>
+                <div class="product-ttx-item">
+                    <span class="ttx-item-term">Время полной зарядки, час</span>
+                    <span class="ttx-item-def">2</span>
+                </div>
+                <div class="product-ttx-item">
+                    <span class="ttx-item-term">Версия Bluetooth</span>
+                    <span class="ttx-item-def">3.0</span>
+                </div>
+            </div>
+            <div class="product-accessories" id="accessories" style="display: none;" data-tab>
+                <div class="row list-product">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="list-product-item">
+    <div class="list-item-image" data-quickview="product-1">
+        <span class="cell"><img src="userdata/product1.png" title="Ультрасовременные наушники SOUNDGROUND S2" alt="Ультрасовременные наушники SOUNDGROUND S2"></span>
+    </div>
+    <div class="list-item-content">
+        <span class="list-item-meta">Аудио-видео</span>
+        <a href="catalog-item.html" class="list-item-title">Ультрасовременные наушники SOUNDGROUND S2</a>
+        <div class="list-item-special">
+            <div class="list-item-special-cell">
+                <span class="product-rating rating-1">
+                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                </span>
+            </div>
+            <div class="list-item-special-cell">
+                <span class="product-comment">
+                    <svg class="icon icon-icon-comment"><use xlink:href="images/icons.svg#icon-comment"></use></svg> 33
+                </span>
+            </div>
+        </div>
+        <div class="list-item-footer">
+            <div class="list-item-footer-cell">
+                <span class="list-item-price">53 450 Р</span>
+            </div>
+            <div class="list-item-footer-cell">
+                <a href="catalog-item.html" class="button button-first list-item-more">Подробнее</a>
+            </div>
+        </div>
+    </div>
+</div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="list-product-item">
+    <div class="list-item-image" data-quickview="product-1">
+        <span class="cell"><img src="userdata/product2.png" title="3d принтер DADGET3D" alt="3d принтер DADGET3D"></span>
+    </div>
+    <div class="list-item-content">
+        <span class="list-item-meta">Аудио-видео</span>
+        <a href="catalog-item.html" class="list-item-title">3d принтер DADGET3D</a>
+        <div class="list-item-special">
+            <div class="list-item-special-cell">
+                <span class="product-rating rating-3">
+                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                </span>
+            </div>
+            <div class="list-item-special-cell">
+                <span class="product-comment">
+                    <svg class="icon icon-icon-comment"><use xlink:href="images/icons.svg#icon-comment"></use></svg> 33
+                </span>
+            </div>
+        </div>
+        <div class="list-item-footer">
+            <div class="list-item-footer-cell">
+                <span class="list-item-price">53 450 Р</span>
+            </div>
+            <div class="list-item-footer-cell">
+                <a href="catalog-item.html" class="button button-first list-item-more">Подробнее</a>
+            </div>
+        </div>
+    </div>
+</div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="list-product-item">
+    <div class="list-item-image" data-quickview="product-1">
+        <span class="cell"><img src="userdata/product3.png" title="Теловизор SEEK THERMAL COMPACT PRO" alt="Теловизор SEEK THERMAL COMPACT PRO"></span>
+    </div>
+    <div class="list-item-content">
+        <span class="list-item-meta">Аудио-видео</span>
+        <a href="catalog-item.html" class="list-item-title">Теловизор SEEK THERMAL COMPACT PRO</a>
+        <div class="list-item-special">
+            <div class="list-item-special-cell">
+                <span class="product-rating rating-5">
+                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                </span>
+            </div>
+            <div class="list-item-special-cell">
+                <span class="product-comment">
+                    <svg class="icon icon-icon-comment"><use xlink:href="images/icons.svg#icon-comment"></use></svg> 33
+                </span>
+            </div>
+        </div>
+        <div class="list-item-footer">
+            <div class="list-item-footer-cell">
+                <span class="list-item-price">53 450 Р</span>
+            </div>
+            <div class="list-item-footer-cell">
+                <a href="catalog-item.html" class="button button-first list-item-more">Подробнее</a>
+            </div>
+        </div>
+    </div>
+</div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="list-product-item">
+    <div class="list-item-image" data-quickview="product-1">
+        <span class="cell"><img src="userdata/product1.png" title="Ультрасовременные наушники SOUNDGROUND S2" alt="Ультрасовременные наушники SOUNDGROUND S2"></span>
+    </div>
+    <div class="list-item-content">
+        <span class="list-item-meta">Аудио-видео</span>
+        <a href="catalog-item.html" class="list-item-title">Ультрасовременные наушники SOUNDGROUND S2</a>
+        <div class="list-item-special">
+            <div class="list-item-special-cell">
+                <span class="product-rating rating-1">
+                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                </span>
+            </div>
+            <div class="list-item-special-cell">
+                <span class="product-comment">
+                    <svg class="icon icon-icon-comment"><use xlink:href="images/icons.svg#icon-comment"></use></svg> 33
+                </span>
+            </div>
+        </div>
+        <div class="list-item-footer">
+            <div class="list-item-footer-cell">
+                <span class="list-item-price">53 450 Р</span>
+            </div>
+            <div class="list-item-footer-cell">
+                <a href="catalog-item.html" class="button button-first list-item-more">Подробнее</a>
+            </div>
+        </div>
+    </div>
+</div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="list-product-item">
+    <div class="list-item-image" data-quickview="product-1">
+        <span class="cell"><img src="userdata/product2.png" title="3d принтер DADGET3D" alt="3d принтер DADGET3D"></span>
+    </div>
+    <div class="list-item-content">
+        <span class="list-item-meta">Аудио-видео</span>
+        <a href="catalog-item.html" class="list-item-title">3d принтер DADGET3D</a>
+        <div class="list-item-special">
+            <div class="list-item-special-cell">
+                <span class="product-rating rating-3">
+                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                </span>
+            </div>
+            <div class="list-item-special-cell">
+                <span class="product-comment">
+                    <svg class="icon icon-icon-comment"><use xlink:href="images/icons.svg#icon-comment"></use></svg> 33
+                </span>
+            </div>
+        </div>
+        <div class="list-item-footer">
+            <div class="list-item-footer-cell">
+                <span class="list-item-price">53 450 Р</span>
+            </div>
+            <div class="list-item-footer-cell">
+                <a href="catalog-item.html" class="button button-first list-item-more">Подробнее</a>
+            </div>
+        </div>
+    </div>
+</div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="list-product-item">
+    <div class="list-item-image" data-quickview="product-1">
+        <span class="cell"><img src="userdata/product3.png" title="Теловизор SEEK THERMAL COMPACT PRO" alt="Теловизор SEEK THERMAL COMPACT PRO"></span>
+    </div>
+    <div class="list-item-content">
+        <span class="list-item-meta">Аудио-видео</span>
+        <a href="catalog-item.html" class="list-item-title">Теловизор SEEK THERMAL COMPACT PRO</a>
+        <div class="list-item-special">
+            <div class="list-item-special-cell">
+                <span class="product-rating rating-5">
+                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                </span>
+            </div>
+            <div class="list-item-special-cell">
+                <span class="product-comment">
+                    <svg class="icon icon-icon-comment"><use xlink:href="images/icons.svg#icon-comment"></use></svg> 33
+                </span>
+            </div>
+        </div>
+        <div class="list-item-footer">
+            <div class="list-item-footer-cell">
+                <span class="list-item-price">53 450 Р</span>
+            </div>
+            <div class="list-item-footer-cell">
+                <a href="catalog-item.html" class="button button-first list-item-more">Подробнее</a>
+            </div>
+        </div>
+    </div>
+</div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="list-product-item">
+    <div class="list-item-image" data-quickview="product-1">
+        <span class="cell"><img src="userdata/product1.png" title="Ультрасовременные наушники SOUNDGROUND S2" alt="Ультрасовременные наушники SOUNDGROUND S2"></span>
+    </div>
+    <div class="list-item-content">
+        <span class="list-item-meta">Аудио-видео</span>
+        <a href="catalog-item.html" class="list-item-title">Ультрасовременные наушники SOUNDGROUND S2</a>
+        <div class="list-item-special">
+            <div class="list-item-special-cell">
+                <span class="product-rating rating-1">
+                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                </span>
+            </div>
+            <div class="list-item-special-cell">
+                <span class="product-comment">
+                    <svg class="icon icon-icon-comment"><use xlink:href="images/icons.svg#icon-comment"></use></svg> 33
+                </span>
+            </div>
+        </div>
+        <div class="list-item-footer">
+            <div class="list-item-footer-cell">
+                <span class="list-item-price">53 450 Р</span>
+            </div>
+            <div class="list-item-footer-cell">
+                <a href="catalog-item.html" class="button button-first list-item-more">Подробнее</a>
+            </div>
+        </div>
+    </div>
+</div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="list-product-item">
+    <div class="list-item-image" data-quickview="product-1">
+        <span class="cell"><img src="userdata/product2.png" title="3d принтер DADGET3D" alt="3d принтер DADGET3D"></span>
+    </div>
+    <div class="list-item-content">
+        <span class="list-item-meta">Аудио-видео</span>
+        <a href="catalog-item.html" class="list-item-title">3d принтер DADGET3D</a>
+        <div class="list-item-special">
+            <div class="list-item-special-cell">
+                <span class="product-rating rating-3">
+                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                </span>
+            </div>
+            <div class="list-item-special-cell">
+                <span class="product-comment">
+                    <svg class="icon icon-icon-comment"><use xlink:href="images/icons.svg#icon-comment"></use></svg> 33
+                </span>
+            </div>
+        </div>
+        <div class="list-item-footer">
+            <div class="list-item-footer-cell">
+                <span class="list-item-price">53 450 Р</span>
+            </div>
+            <div class="list-item-footer-cell">
+                <a href="catalog-item.html" class="button button-first list-item-more">Подробнее</a>
+            </div>
+        </div>
+    </div>
+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-questions" id="questions" style="display: none;" data-tab>
+                <div class="content-row-header">
+                    <div class="content-row-heading">
+                        Отзывы и вопросы
+                    </div>
+                    <div class="content-row-meta">
+                        <button class="button button-second" data-toggle="modal" data-target="#modal-question">Задать вопрос</button>
+                        <button class="button button-second" data-toggle="modal" data-target="#modal-review">Добавить отзыв</button>
+                    </div>
+                </div>
+                <div class="list list-question" data-text-expand="Читать дальше" data-text-collapse="Свернуть">
+                    <div class="list-question-item">
+                        <div class="list-item-image">
+                            <img src="userdata/avatar.jpg" title="Александр Сидоров" alt="Александр Сидоров">
+                        </div>
+                        <div class="list-item-content">
+                            <div class="list-item-title">
+                                Александр Сидоров
+                            </div>
+                            <div class="list-item-meta">
+                                24.07.2017&nbsp;&nbsp;10:50
+                            </div>
+                            <div class="list-item-rating">
+                                <span class="product-rating rating-2">
+                                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                </span>
+                            </div>
+                            <div class="list-item-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquaipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                            </div>
+                            <div class="list-question-item">
+                                <div class="list-item-image">
+                                    <img src="userdata/avatar.jpg" title="Александр Сидоров" alt="Александр Сидоров">
+                                </div>
+                                <div class="list-item-content">
+                                    <div class="list-item-title">
+                                        Александр Сидоров
+                                    </div>
+                                    <div class="list-item-meta">
+                                        24.07.2017&nbsp;&nbsp;10:50
+                                    </div>
+                                    <div class="list-item-rating">
+                                        <span class="product-rating rating-2">
+                                            <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                            <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                            <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                            <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                            <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                        </span>
+                                    </div>
+                                    <div class="list-item-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquaipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-question-item">
+                        <div class="list-item-image">
+                            <img src="userdata/avatar.jpg" title="Александр Сидоров" alt="Александр Сидоров">
+                        </div>
+                        <div class="list-item-content">
+                            <div class="list-item-title">
+                                Александр Сидоров
+                            </div>
+                            <div class="list-item-meta">
+                                24.07.2017&nbsp;&nbsp;10:50
+                            </div>
+                            <div class="list-item-rating">
+                                <span class="product-rating rating-2">
+                                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                </span>
+                            </div>
+                            <div class="list-item-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquaipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-question-item">
+                        <div class="list-item-image">
+                            <img src="userdata/avatar.jpg" title="Александр Сидоров" alt="Александр Сидоров">
+                        </div>
+                        <div class="list-item-content">
+                            <div class="list-item-title">
+                                Александр Сидоров
+                            </div>
+                            <div class="list-item-meta">
+                                24.07.2017&nbsp;&nbsp;10:50
+                            </div>
+                            <div class="list-item-rating">
+                                <span class="product-rating rating-2">
+                                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                </span>
+                            </div>
+                            <div class="list-item-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquaipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-support" id="support" style="display: none;" data-tab>
+                <div class="product-support-item">
+                    <div class="support-item-title">
+                        <svg class="icon icon-icon-android"><use xlink:href="images/icons.svg#icon-android"></use></svg>
+                        Поддержка для iOS
+                    </div>
+                    <div class="support-item-link">
+                        <a href="#" title="Поддержка для iOS">Скачать</a>
+                    </div>
+                </div>
+                <div class="product-support-item">
+                    <div class="support-item-title">
+                        <svg class="icon icon-icon-apple"><use xlink:href="images/icons.svg#icon-apple"></use></svg>
+                        Приложение для Android
+                    </div>
+                    <div class="support-item-link">
+                        <a href="#" title="Приложение для Android">Скачать</a>
+                    </div>
+                </div>
+                <div class="product-support-item">
+                    <div class="support-item-title">
+                        <svg class="icon icon-icon-file"><use xlink:href="images/icons.svg#icon-file"></use></svg>
+                        Руководство по началу работы
+                    </div>
+                    <div class="support-item-link">
+                        <a href="#" title="Руководство по началу работы">Скачать</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-reviews" id="reviews" style="display: none;" data-tab>
+                <div class="content-row-header">
+                    <div class="content-row-heading">
+                        О нас пишут
+                    </div>
+                </div>
+                <div class="list list-question" data-text-cut data-text-expand="Читать дальше" data-text-collapse="Свернуть">
+                    <div class="list-question-item">
+                        <div class="list-item-image">
+                            <img src="userdata/avatar.jpg" title="Александр Сидоров" alt="Александр Сидоров">
+                        </div>
+                        <div class="list-item-content">
+                            <div class="list-item-title">
+                                Компания Microsoft, Александр Сидоров
+                            </div>
+                            <div class="list-item-meta">
+                                24.07.2017&nbsp;&nbsp;10:50
+                            </div>
+                            <div class="list-item-text">
+                                <p>
+                                    <strong>Серьёзный игрок на рынке</strong>
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquaipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-question-item">
+                        <div class="list-item-image">
+                            <img src="userdata/avatar.jpg" title="Александр Сидоров" alt="Александр Сидоров">
+                        </div>
+                        <div class="list-item-content">
+                            <div class="list-item-title">
+                                Компания Microsoft, Александр Сидоров
+                            </div>
+                            <div class="list-item-meta">
+                                24.07.2017&nbsp;&nbsp;10:50
+                            </div>
+                            <div class="list-item-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquaipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-question-item">
+                        <div class="list-item-image">
+                            <img src="userdata/avatar.jpg" title="Александр Сидоров" alt="Александр Сидоров">
+                        </div>
+                        <div class="list-item-content">
+                            <div class="list-item-title">
+                                Компания Microsoft, Александр Сидоров
+                            </div>
+                            <div class="list-item-meta">
+                                24.07.2017&nbsp;&nbsp;10:50
+                            </div>
+                            <div class="list-item-text">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquaipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquaipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination">
+    <a href="#" class="pagination-item prev"><svg class="icon icon-arrow-left"><use xlink:href="images/icons.svg#arrow-left"></use></svg></a>
+    <a href="#" class="pagination-item">1</a>
+    <a href="#" class="pagination-item">2</a>
+    <a href="#" class="pagination-item">3</a>
+    <span class="pagination-item">4</span>
+    <a href="#" class="pagination-item">5</a>
+    <a href="#" class="pagination-item">6</a>
+    <a href="#" class="pagination-item next"><svg class="icon icon-arrow-right"><use xlink:href="images/icons.svg#arrow-right"></use></svg></a>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="content-row">
+    <div class="container">
+        <div class="content-row-header">
+            <h2 class="content-row-heading">
+                Товары из этой линейки
+            </h2>
+        </div>
+        <div class="list-compare row">
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                <div class="list-compare-item first">
+                    <div class="list-compare-header list-compare-caption">
+                        <span class="cell"><strong>Тепловизоры</strong>Сравните и выберите</span>
+                    </div>
+                    <div class="list-item-ttx">
+                        <div class="list-item-row list-item-title">
+                            <span class="cell">Название продукта</span>
+                        </div>
+                        <div class="list-item-row">Рейтинг</div>
+                        <div class="list-item-row">Версия Bluetooth</div>
+                        <div class="list-item-row">Используемая технология</div>
+                        <div class="list-item-row">Связь со смартфоном</div>
+                        <div class="list-item-row hidden" style="display: none;">Скрытый параметр 1</div>
+                        <div class="list-item-row">Количество микрофонов</div>
+                        <div class="list-item-row hidden" style="display: none;">Скрытый параметр 2</div>
+                        <div class="list-item-row">Время автономной работы, час</div>
+                        <div class="list-item-row">Время в режиме ожидания, час</div>
+                        <div class="list-item-row">Время полной зарядки, час</div>
+                        <div class="list-item-row hidden" style="display: none;">Скрытый параметр 3</div>
+                        <div class="list-item-row">Цена</div>
+                    </div>
+                </div>
+            </div>
+            <div id="carousel-compare">
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                    <div class="list-compare-item">
+                        <div class="list-compare-header">
+                            <div class="list-item-image">
+                                <span class="cell"><img src="userdata/product1.png" title="SOUNDGROUND S2" alt="SOUNDGROUND S2"></span>
+                            </div>
+                            <div class="list-item-meta">
+                                Безопасность
+                            </div>
+                        </div>
+                        <div class="list-item-ttx">
+                            <div class="list-item-row list-item-title">
+                                <span class="cell">Ультрасовременные наушники SOUNDGROUND S2</span>
+                            </div>
+                            <div class="list-item-row">
+                                <span class="product-rating rating-5">
+                                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                </span>
+                                <span class="product-comment">
+                                    <svg class="icon icon-icon-comment"><use xlink:href="images/icons.svg#icon-comment"></use></svg> 33
+                                </span>
+                            </div>
+                            <div class="list-item-row">3.0</div>
+                            <div class="list-item-row">Костная проводимость</div>
+                            <div class="list-item-row">Bluethooth</div>
+                            <div class="list-item-row hidden" style="display: none;">Скрытое значение 1</div>
+                            <div class="list-item-row">2</div>
+                            <div class="list-item-row hidden" style="display: none;">Скрытое значение 2</div>
+                            <div class="list-item-row">6</div>
+                            <div class="list-item-row">10</div>
+                            <div class="list-item-row">2</div>
+                            <div class="list-item-row hidden" style="display: none;">Скрытое значение 3</div>
+                            <div class="list-item-row">53 450 Р</div>
+                            <div class="list-item-row list-item-more">
+                                <button class="button button-first">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                    <div class="list-compare-item">
+                        <div class="list-compare-header">
+                            <div class="list-item-image">
+                                <span class="cell"><img src="userdata/product1.png" title="SOUNDGROUND S2" alt="SOUNDGROUND S2"></span>
+                            </div>
+                            <div class="list-item-meta">
+                                Безопасность
+                            </div>
+                        </div>
+                        <div class="list-item-ttx">
+                            <div class="list-item-row list-item-title">
+                                <span class="cell">Ультрасовременные наушники SOUNDGROUND S2</span>
+                            </div>
+                            <div class="list-item-row">
+                                <span class="product-rating rating-5">
+                                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                    <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                </span>
+                                <span class="product-comment">
+                                    <svg class="icon icon-icon-comment"><use xlink:href="images/icons.svg#icon-comment"></use></svg> 33
+                                </span>
+                            </div>
+                            <div class="list-item-row">3.0</div>
+                            <div class="list-item-row">Костная проводимость</div>
+                            <div class="list-item-row">Bluethooth</div>
+                            <div class="list-item-row hidden" style="display: none;">Скрытое значение 1</div>
+                            <div class="list-item-row">2</div>
+                            <div class="list-item-row hidden" style="display: none;">Скрытое значение 2</div>
+                            <div class="list-item-row">6</div>
+                            <div class="list-item-row">10</div>
+                            <div class="list-item-row">2</div>
+                            <div class="list-item-row hidden" style="display: none;">Скрытое значение 3</div>
+                            <div class="list-item-row">53 450 Р</div>
+                            <div class="list-item-row list-item-more">
+                                <button class="button button-first">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                <div class="list-compare-item">
+                    <div class="list-compare-header">
+                        <div class="list-item-image">
+                            <span class="cell"><img src="userdata/product1.png" title="SOUNDGROUND S2" alt="SOUNDGROUND S2"></span>
+                        </div>
+                        <div class="list-item-meta">
+                            Безопасность
+                        </div>
+                    </div>
+                    <div class="list-item-ttx">
+                        <div class="list-item-row list-item-title">
+                            <span class="cell">Ультрасовременные наушники SOUNDGROUND S2</span>
+                        </div>
+                        <div class="list-item-row">
+                            <span class="product-rating rating-5">
+                                <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                            </span>
+                            <span class="product-comment">
+                                <svg class="icon icon-icon-comment"><use xlink:href="images/icons.svg#icon-comment"></use></svg> 33
+                            </span>
+                        </div>
+                        <div class="list-item-row">3.0</div>
+                        <div class="list-item-row">Костная проводимость</div>
+                        <div class="list-item-row">Bluethooth</div>
+                        <div class="list-item-row hidden" style="display: none;">Скрытое значение 1</div>
+                        <div class="list-item-row">2</div>
+                        <div class="list-item-row hidden" style="display: none;">Скрытое значение 2</div>
+                        <div class="list-item-row">6</div>
+                        <div class="list-item-row">10</div>
+                        <div class="list-item-row">2</div>
+                        <div class="list-item-row hidden" style="display: none;">Скрытое значение 3</div>
+                        <div class="list-item-row">53 450 Р</div>
+                        <div class="list-item-row list-item-more">
+                            <button class="button button-first">Купить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                    <div class="list-compare-item">
+                        <div class="list-compare-header">
+                            <div class="list-item-image">
+                                <span class="cell"><img src="userdata/product1.png" title="SOUNDGROUND S2" alt="SOUNDGROUND S2"></span>
+                            </div>
+                            <div class="list-item-meta">
+                                Безопасность
+                            </div>
+                        </div>
+                        <div class="list-item-ttx">
+                            <div class="list-item-row list-item-title">
+                                <span class="cell">Ультрасовременные наушники SOUNDGROUND S2</span>
+                            </div>
+                            <div class="list-item-row">
+                            <span class="product-rating rating-5">
+                                <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                            </span>
+                                <span class="product-comment">
+                                <svg class="icon icon-icon-comment"><use xlink:href="images/icons.svg#icon-comment"></use></svg> 33
+                            </span>
+                            </div>
+                            <div class="list-item-row">3.0</div>
+                            <div class="list-item-row">Костная проводимость</div>
+                            <div class="list-item-row">Bluethooth</div>
+                            <div class="list-item-row hidden" style="display: none;">Скрытое значение 1</div>
+                            <div class="list-item-row">2</div>
+                            <div class="list-item-row hidden" style="display: none;">Скрытое значение 2</div>
+                            <div class="list-item-row">6</div>
+                            <div class="list-item-row">10</div>
+                            <div class="list-item-row">2</div>
+                            <div class="list-item-row hidden" style="display: none;">Скрытое значение 3</div>
+                            <div class="list-item-row">53 450 Р</div>
+                            <div class="list-item-row list-item-more">
+                                <button class="button button-first">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="list-compare-more">
+            <button class="link" data-compare-toggle>Посмотреть все параметры</button>
+        </div>
+    </div>
+</div>
+
+<div class="content-row">
+    <div class="container">
+        <div class="content-row-header">
+            <h2 class="content-row-heading">
+                Почему у нас покупают
+            </h2>
+        </div>
+        <div class="list-plus row">
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="list-plus-item">
+                    <div class="list-item-image">
+                        <span class="cell"><svg class="icon icon-icon-return"><use xlink:href="images/icons.svg#icon-return"></use></svg></span>
+                    </div>
+                    <div class="list-item-title">
+                        Товар обманул ожидания? Верните
+                    </div>
+                    <div class="list-item-text">
+                        Возврат в течение 1 года, даже если вы им пользовались. (при условии сохранения товарного вида и упаковки)
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="list-plus-item">
+                    <div class="list-item-image">
+                        <span class="cell"><svg class="icon icon-icon-shop"><use xlink:href="images/icons.svg#icon-shop"></use></svg></span>
+                    </div>
+                    <div class="list-item-title">
+                        Мы не просто<br>
+                        интернет-магазин!
+                    </div>
+                    <div class="list-item-text">
+                        У нас 25 фирменных магазинов в Москве, Калининграде, в Беларуси, Казахстане.<br>
+                        Приходите!
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="list-plus-item">
+                    <div class="list-item-image">
+                        <span class="cell"><svg class="icon icon-icon-warranty"><use xlink:href="images/icons.svg#icon-warranty"></use></svg></span>
+                    </div>
+                    <div class="list-item-title">
+                        Гарантируем качество!
+                    </div>
+                    <div class="list-item-text">
+                        Мы уверены в качестве товаров Даджет, т.к работаем напрямую с производителями и контролируем качество по всей цепочке поставки
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="list-plus-item">
+                    <div class="list-item-image">
+                        <span class="cell"><svg class="icon icon-icon-delivery"><use xlink:href="images/icons.svg#icon-delivery"></use></svg></span>
+                    </div>
+                    <div class="list-item-title">
+                        Доставляем быстро<br>
+                        и удобно!
+                    </div>
+                    <div class="list-item-text">
+                        Доставка до двери и точек выдачи по всей РФ.<br>
+                        Выбор способов оплаты.<br>
+                        Оплата при получении.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="content-row">
+    <div class="container">
+        <div class="content-row-header">
+            <h2 class="content-row-heading">
+                Доставка
+            </h2>
+        </div>
+        <div class="list-delivery row">
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="list-delivery-item">
+                    <div class="list-item-title">
+                        Заголовок
+                    </div>
+                    <div class="list-item-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                    </div>
+                    <div class="list-item-price">
+                        500 Р
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="list-delivery-item">
+                    <div class="list-item-title">
+                        Заголовок
+                    </div>
+                    <div class="list-item-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                    </div>
+                    <div class="list-item-price">
+                        500 Р
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="list-delivery-item">
+                    <div class="list-item-title">
+                        Заголовок
+                    </div>
+                    <div class="list-item-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                    </div>
+                    <div class="list-item-price">
+                        500 Р
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="list-delivery-item">
+                    <div class="list-item-title">
+                        Заголовок
+                    </div>
+                    <div class="list-item-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                    </div>
+                    <div class="list-item-price">
+                        500 Р
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="content-row" id="offices">
+    <div class="container">
+        <div class="content-row-header">
+            <h2 class="content-row-heading">
+                Наличие в магазинах
+            </h2>
+        </div>
+        <div class="content-row-body">
+            <div class="list-office">
+                <div class="list-office-item">
+                    <div class="list-item-title">
+                        ТРЦ «Европейский»
+                    </div>
+                    <div class="list-item-content">
+                        <div class="list-item-cell">
+                            <div>Адрес: пр. Московский д. 51</div>
+                            <div>Метро: Чеховская</div>
+                        </div>
+                        <div class="list-item-cell">
+                            <div>Пн-Пт (9:00-20:00)</div>
+                            <div>Сб-Вс (11:00-18:00)</div>
+                        </div>
+                        <div class="list-item-cell">
+                            <div>8 495 212-85-06</div>
+                        </div>
+                        <div class="list-item-cell">
+                            <button class="button button-first">Забрать отсюда</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-office-item">
+                    <div class="list-item-title">
+                        ТРЦ «Европейский»
+                    </div>
+                    <div class="list-item-content">
+                        <div class="list-item-cell">
+                            <div>Адрес: пр. Московский д. 51</div>
+                            <div>Метро: Чеховская</div>
+                        </div>
+                        <div class="list-item-cell">
+                            <div>Пн-Пт (9:00-20:00)</div>
+                            <div>Сб-Вс (11:00-18:00)</div>
+                        </div>
+                        <div class="list-item-cell">
+                            <div>8 495 212-85-06</div>
+                        </div>
+                        <div class="list-item-cell">
+                            <button class="button button-first">Забрать отсюда</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-office-item">
+                    <div class="list-item-title">
+                        ТРЦ «Европейский»
+                    </div>
+                    <div class="list-item-content">
+                        <div class="list-item-cell">
+                            <div>Адрес: пр. Московский д. 51</div>
+                            <div>Метро: Чеховская</div>
+                        </div>
+                        <div class="list-item-cell">
+                            <div>Пн-Пт (9:00-20:00)</div>
+                            <div>Сб-Вс (11:00-18:00)</div>
+                        </div>
+                        <div class="list-item-cell">
+                            <div>8 495 212-85-06</div>
+                        </div>
+                        <div class="list-item-cell">
+                            <button class="button button-first">Забрать отсюда</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="container">
+        <div class="footer-menu menu-footer">
+            <div class="heading" data-accordion-toggle="footer-menu-1">
+                О компании
+            </div>
+            <div class="menu-container" data-accordion="footer-menu-1">
+                <a href="#" class="menu-item" title="Миссия">Миссия</a>
+                <a href="#" class="menu-item" title="Качество">Качество</a>
+                <a href="#" class="menu-item" title="Гарантия">Гарантия</a>
+                <a href="#" class="menu-item" title="Вакансии">Вакансии</a>
+                <a href="#" class="menu-item" title="Контакты">Контакты</a>
+            </div>
+        </div>
+        <div class="footer-menu menu-footer">
+            <div class="heading" data-accordion-toggle="footer-menu-2">
+                Помощь
+            </div>
+            <div class="menu-container" data-accordion="footer-menu-2">
+                <a href="#" class="menu-item" title="Бонусная программа">Бонусная программа</a>
+                <a href="#" class="menu-item" title="Возврат товара">Возврат товара</a>
+                <a href="#" class="menu-item" title="Техническия консультация">Техническия консультация</a>
+                <a href="#" class="menu-item" title="Обратная связь">Обратная связь</a>
+                <a href="#" class="menu-item" title="Обработка персональных данных">Обработка персональных данных</a>
+            </div>
+        </div>
+        <div class="footer-menu menu-footer">
+            <div class="heading" data-accordion-toggle="footer-menu-3">
+                Сотрудничество
+            </div>
+            <div class="menu-container" data-accordion="footer-menu-3">
+                <a href="#" class="menu-item" title="Оптовые закупки">Оптовые закупки</a>
+                <a href="#" class="menu-item" title="Блогерам и СМИ">Блогерам и СМИ</a>
+                <a href="#" class="menu-item" title="По вопросам рекламы">По вопросам рекламы</a>
+                <a href="#" class="menu-item" title="Франчайзинг">Франчайзинг</a>
+            </div>
+        </div>
+        <div class="footer-contacts">
+            <div class="footer-contacts-item">
+                <svg class="icon icon-icon-phone"><use xlink:href="images/icons.svg#icon-phone"></use></svg>
+                <div class="heading">
+                    <a href="tel:88001001233" rel="nofollow" title="Позвонить">8 800 100-12-33</a>
+                </div>
+                Звонок по России бесплатный
+            </div>
+            <div class="footer-contacts-item">
+                <svg class="icon icon-icon-envelope"><use xlink:href="images/icons.svg#icon-envelope"></use></svg>
+                <div class="heading">
+                    <a href="mailto:info@dadget.ru" rel="nofollow" title="Написать письмо">info@dadget.ru</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <div class="footer-copy-text">
+                Dadget, 2017
+            </div>
+            <a href="#" class="footer-copy-logo" target="_blank" rel="nofollow" title="Разработчик">
+                <img src="images/magnitmedia.svg" title="MagnitMedia" alt="MagnitMedia">
+            </a>
+        </div>
+    </div>
+</div>
+
+</div><!--/.content-->
+
+</div><!--/.wrapper-->
+
+<div class="modal fade" id="modal-callback">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-title">
+                <button type="button" class="button button-back" data-dismiss="modal" title="Закрыть">
+                    <svg class="icon icon-arrow-back"><use xlink:href="images/icons.svg#arrow-back"></use></svg>
+                </button>
+                Заказать обратный звонок
+                <button type="button" class="button button-close" data-dismiss="modal" title="Закрыть">
+                    <svg class="icon icon-icon-close"><use xlink:href="images/icons.svg#icon-close"></use></svg>
+                </button>
+            </div>
+            <form id="form-callback">
+                <div class="form-content">
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-control" placeholder="Имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="phone" class="form-control" placeholder="Телефон" data-mask="phone" required>
+                    </div>
+                    <div class="modal-tip">
+                        Наш специалист свяжется с Вами в течение 30 минут
+                    </div>
+                    <div class="form-submit">
+                        <button type="submit" class="button button-second">Отправить</button>
+                    </div>
+                </div>
+                <div class="form-success">
+                    Спасибо!<br>
+                    Ваша заявка успешно отправлена.<br>
+                    Наш менеджер свяжется с вами<br>
+                    в течение 30 минут
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-question">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-title">
+                <button type="button" class="button button-back" data-dismiss="modal" title="Закрыть">
+                    <svg class="icon icon-arrow-back"><use xlink:href="images/icons.svg#arrow-back"></use></svg>
+                </button>
+                Задать вопрос
+                <button type="button" class="button button-close" data-dismiss="modal" title="Закрыть">
+                    <svg class="icon icon-icon-close"><use xlink:href="images/icons.svg#icon-close"></use></svg>
+                </button>
+            </div>
+            <form id="form-question">
+                <div class="form-content">
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-control" placeholder="Имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-control" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="question" class="form-control" placeholder="Ваш вопрос"></textarea>
+                    </div>
+                    <div class="form-submit">
+                        <button type="submit" class="button button-second">Отправить</button>
+                    </div>
+                </div>
+                <div class="form-success">
+                    Спасибо!<br>
+                    Ваша заявка успешно отправлена.<br>
+                    Наш менеджер свяжется с вами<br>
+                    в течение 30 минут
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-review">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-title">
+                <button type="button" class="button button-back" data-dismiss="modal" title="Закрыть">
+                    <svg class="icon icon-arrow-back"><use xlink:href="images/icons.svg#arrow-back"></use></svg>
+                </button>
+                Добавить отзыв
+                <button type="button" class="button button-close" data-dismiss="modal" title="Закрыть">
+                    <svg class="icon icon-icon-close"><use xlink:href="images/icons.svg#icon-close"></use></svg>
+                </button>
+            </div>
+            <form id="form-review">
+                <div class="form-content">
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-control" placeholder="Имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-control" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-control" placeholder="Заголовок">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="question" class="form-control" placeholder="Ваш отзыв"></textarea>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <div class="input-rating-wrapper">
+                                    <span class="heading">Оцените</span>
+                                    <label class="input-rating">
+                                        <input type="radio" name="rating">
+                                        <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                    </label>
+                                    <label class="input-rating">
+                                        <input type="radio" name="rating">
+                                        <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                    </label>
+                                    <label class="input-rating">
+                                        <input type="radio" name="rating">
+                                        <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                    </label>
+                                    <label class="input-rating">
+                                        <input type="radio" name="rating" checked>
+                                        <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                    </label>
+                                    <label class="input-rating">
+                                        <input type="radio" name="rating">
+                                        <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-submit">
+                                <button type="submit" class="button button-second">Отправить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-success">
+                    Спасибо!<br>
+                    Ваша заявка успешно отправлена.<br>
+                    Наш менеджер свяжется с вами<br>
+                    в течение 30 минут
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-header">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-title">
+                <button type="button" class="button button-close" data-dismiss="modal" title="Закрыть">
+                    <svg class="icon icon-icon-close"><use xlink:href="images/icons.svg#icon-close"></use></svg>
+                </button>
+            </div>
+            <div class="header-mobile">
+                <div class="header-mobile-item">
+                    <p data-toggle="modal" data-target="#modal-cities">
+                        <svg class="icon icon-icon-map-marker"><use xlink:href="images/icons.svg#icon-map-marker"></use></svg>
+                        Город: Москва
+                    </p>
+                    <p>
+                        <svg class="icon icon-icon-globe"><use xlink:href="images/icons.svg#icon-globe"></use></svg>
+                        Страна: Россия
+                    </p>
+                </div>
+                <div class="header-mobile-item menu-mobile">
+                    <div class="heading">
+                        Каталог
+                    </div>
+                    <div class="menu-container">
+                        <a href="catalog.html" class="menu-item" title="Новинки">Новинки</a>
+                        <a href="catalog.html" class="menu-item" title="Хиты">Хиты</a>
+                        <a href="catalog.html" class="menu-item" title="Подарки">Подарки</a>
+                        <a href="catalog.html" class="menu-item" title="Новогодние">Новогодние</a>
+                        <a href="catalog.html" class="menu-item" title="Коллекция 2018!">Коллекция 2018!</a>
+                    </div>
+                </div>
+                <div class="header-mobile-item menu-mobile">
+                    <div class="menu-container">
+                        <a href="#" class="menu-item" title="Доставка">Доставка</a>
+                        <a href="#" class="menu-item" title="Оплата">Оплата</a>
+                        <a href="#" class="menu-item" title="Где мой заказ">Где мой заказ</a>
+                        <a href="#" class="menu-item" title="Адреса магазинов">Адреса магазинов</a>
+                        <a href="#" class="menu-item" title="Гарантии">Гарантии</a>
+                    </div>
+                </div>
+                <div class="header-mobile-item">
+                    <p>
+                        <a href="tel:88001001233" class="link">8 800 100-12-33</a>
+                    </p>
+                    <p>
+                        <span class="link" data-toggle="modal" data-target="#modal-callback">
+                            <svg class="icon icon-icon-phone"><use xlink:href="images/icons.svg#icon-phone"></use></svg>
+                            <span>Обратный звонок</span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-cities">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-title">
+                <button type="button" class="button button-back" data-dismiss="modal" title="Закрыть">
+                    <svg class="icon icon-arrow-back"><use xlink:href="images/icons.svg#arrow-back"></use></svg>
+                </button>
+                Выбор города
+                <button type="button" class="button button-close" data-dismiss="modal" title="Закрыть">
+                    <svg class="icon icon-icon-close"><use xlink:href="images/icons.svg#icon-close"></use></svg>
+                </button>
+            </div>
+            <div class="form-group">
+                <input type="text" id="cities-autocomplete" name="search" class="form-control" placeholder="Введите название города">
+            </div>
+            <div id="cities-autocomplete-results"></div>
+        </div>
+    </div>
+</div>
+
+<div class="modal modal-address fade" id="modal-address">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-title">
+                <button type="button" class="button button-back" data-dismiss="modal" title="Закрыть">
+                    <svg class="icon icon-arrow-back"><use xlink:href="images/icons.svg#arrow-back"></use></svg>
+                </button>
+                Изменить адрес доставки
+                <button type="button" class="button button-close" data-dismiss="modal" title="Закрыть">
+                    <svg class="icon icon-icon-close"><use xlink:href="images/icons.svg#icon-close"></use></svg>
+                </button>
+            </div>
+            <form id="form-address">
+                <div class="form-content">
+                    <div class="form-group">
+                        <input type="text" name="city" class="form-control" placeholder="Город" value="Москва" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="street" class="form-control" placeholder="Улица" value="Тверская" required>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" name="zip" class="form-control" placeholder="Индекс" value="107140" data-mask="zip" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" name="building" class="form-control" placeholder="Дом" value="1" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" name="block1" class="form-control" placeholder="Корпус" value="2" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" name="apartment" class="form-control" placeholder="Квартира" value="13" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-md-offset-6">
+                            <div class="form-submit">
+                                <button type="submit" class="button button-second">Сохранить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-success">
+                    Спасибо!<br>
+                    Ваша заявка успешно отправлена.<br>
+                    Наш менеджер свяжется с вами<br>
+                    в течение 30 минут
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal modal-quickview fade" id="modal-quickview">
+    <div class="modal-dialog">
+        <div class="modal-content"></div>
+    </div>
+</div>
+<div class="menu-pages-toggle" data-menu-toggle="menu-pages">
+    Страницы
+</div>
+<div class="menu-pages menu-highlighted" data-menu="menu-pages">
+    <a href="index.html" class="menu-item">home</a>
+    <a href="catalog.html" class="menu-item separator">catalog</a>
+    <a href="catalog-item.html" class="menu-item">catalog-item</a>
+    <a href="search.html" class="menu-item">search</a>
+    <a href="cart.html" class="menu-item separator">cart</a>
+    <a href="cart-success.html" class="menu-item">cart-success</a>
+    <a href="news.html" class="menu-item separator">news</a>
+    <a href="news-item.html" class="menu-item">news-item</a>
+    <a href="profile-orders.html" class="menu-item separator">profile-orders</a>
+    <a href="profile-data.html" class="menu-item">profile-data</a>
+    <a href="contacts.html" class="menu-item separator">contacts</a>
+    <a href="404.html" class="menu-item">404</a>
+    <a href="ui.html" class="menu-item">ui</a>
+</div>
+
+<script>
+    var currentCityId = 1;
+    var currentCityName = "Москва";
+    var iconPlus = '<svg class="icon icon-icon-plus"><use xlink:href="images/icons.svg#icon-plus"></use></svg>';
+    var iconMinus = '<svg class="icon icon-icon-minus"><use xlink:href="images/icons.svg#icon-minus"></use></svg>';
+    var carouselHomeArrowPrev = '<button type="button" class="slick-prev"><svg class="icon icon-arrow-back"><use xlink:href="images/icons.svg#arrow-back"></use></svg></button>';
+    var carouselHomeArrowNext = '<button type="button" class="slick-next"><svg class="icon icon-arrow-forward"><use xlink:href="images/icons.svg#arrow-forward"></use></svg></button>';
+    var carouselProductArrowPrev = '<button type="button" class="slick-prev"><svg class="icon icon-arrow-left"><use xlink:href="images/icons.svg#arrow-left"></use></svg></button>';
+    var carouselProductArrowNext = '<button type="button" class="slick-next"><svg class="icon icon-arrow-right"><use xlink:href="images/icons.svg#arrow-right"></use></svg></button>';
+</script>
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+
+<!--build:js js/jquery.min.js -->
+<script src="js/jquery.js"></script>
+<!-- endbuild -->
+<!--build:js js/jquery-ui.min.js -->
+<script src="js/ui/jquery-ui.js"></script>
+<script src="js/ui/i18n/datepicker-ru.js"></script>
+<!-- endbuild -->
+<!--build:js js/lib.min.js -->
+<script src="js/svg4everybody.js"></script>
+<script src="js/mustache.js"></script>
+<script src="js/plugins/select2.js"></script>
+<script src="js/plugins/tooltipster.bundle.js"></script>
+<script src="js/plugins/slick.js"></script>
+<script src="js/plugins/spritespin.js"></script>
+<script src="js/plugins/lightbox/js/lightbox.js"></script>
+<script src="js/plugins/jquery.easing.js"></script>
+<script src="js/plugins/jquery.validate.js"></script>
+<script src="js/plugins/jquery.maskedinput.js"></script>
+<script src="js/bootstrap/transition.js"></script>
+<script src="js/bootstrap/modal.js"></script>
+<!-- endbuild -->
+<!--build:js js/main.min.js -->
+<script src="js/project/project.js"></script>
+<script src="js/project/menu.js"></script>
+<script src="js/project/menu-highlighted.js"></script>
+<script src="js/project/validator.js"></script>
+<script src="js/project/accordion.js"></script>
+<script src="js/project/placeholder.js"></script>
+<script src="js/project/scrollto.js"></script>
+<script src="js/project/text-toggle.js"></script>
+<script src="js/project/tabs.js"></script>
+<script src="js/project/input-checkbox.js"></script>
+<script src="js/project/input-radio.js"></script>
+<script src="js/project/input-number.js"></script>
+<script src="js/project/input-rating.js"></script>
+<script src="js/pages/home.js"></script>
+<script src="js/pages/catalog.js"></script>
+<script src="js/pages/common.js"></script>
+<script src="js/pages/product.js"></script>
+<script src="js/pages/contacts.js"></script>
+<script src="js/pages/cart.js"></script>
+<script src="js/pages/profile.js"></script>
+<script src="js/pages/news.js"></script>
+<!-- endbuild -->
+
+<!--[if lte IE 9]>
+<script src="js/plugins/jquery.placeholder.js"></script>
+<![endif]-->
+
+</body>
+</html>

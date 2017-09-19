@@ -1,0 +1,87 @@
+<div class="form">
+    <div class="row">
+        <div class="col-md-7">
+            <div class="cart-map" id="cart-map"></div>
+        </div>
+        <div class="col-md-5">
+            <div class="cart-offices">
+                <div class="form-group-select">
+                    Ваш город Москва?
+                    <select name="select" data-placeholder="Изменить" data-header="Выбор города" data-cities data-cart-cities></select>
+                </div>
+                <div class="list-office" id="cart-offices">
+                    <div class="list-office-item">
+                        <div class="list-item-title">
+                            ТРЦ «Европейский»
+                        </div>
+                        <div class="list-item-text">
+                            <div>Адрес: пр. Московский д. 51</div>
+                            <div>Метро: Чеховская</div>
+                        </div>
+                        <div class="list-item-text">
+                            <div>Пн-Пт (9:00-20:00)</div>
+                            <div>Сб-Вс (11:00-18:00)</div>
+                            <div>8 495 212-85-06</div>
+                        </div>
+                        <div class="list-item-text">
+                            <button type="button" class="button button-first">Забрать отсюда</button>
+                        </div>
+                    </div>
+                    <div class="list-office-item">
+                        <div class="list-item-title">
+                            ТРЦ «Европейский»
+                        </div>
+                        <div class="list-item-text">
+                            <div>Адрес: пр. Московский д. 51</div>
+                            <div>Метро: Чеховская</div>
+                        </div>
+                        <div class="list-item-text">
+                            <div>Пн-Пт (9:00-20:00)</div>
+                            <div>Сб-Вс (11:00-18:00)</div>
+                            <div>8 495 212-85-06</div>
+                        </div>
+                        <div class="list-item-text">
+                            <button type="button" class="button button-first">Забрать отсюда</button>
+                        </div>
+                    </div>
+                    <div class="list-office-item">
+                        <div class="list-item-title">
+                            ТРЦ «Европейский»
+                        </div>
+                        <div class="list-item-text">
+                            <div>Адрес: пр. Московский д. 51</div>
+                            <div>Метро: Чеховская</div>
+                        </div>
+                        <div class="list-item-text">
+                            <div>Пн-Пт (9:00-20:00)</div>
+                            <div>Сб-Вс (11:00-18:00)</div>
+                            <div>8 495 212-85-06</div>
+                        </div>
+                        <div class="list-item-text">
+                            <button type="button" class="button button-first">Забрать отсюда</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script id="cart-offices-template" type="x-tmpl-mustache">
+    <div class="list-office-item">
+        <div class="list-item-title">
+            {{ name }}
+        </div>
+        <div class="list-item-text">
+            <div>Адрес: {{ address }}</div>
+            <div>Метро: {{ metro }}</div>
+        </div>
+        <div class="list-item-text">
+            <div>Пн-Пт ({{ worktime_weekdays }})</div>
+            <div>Сб-Вс ({{ worktime_weekends }})</div>
+            <div>{{ phone }}</div>
+        </div>
+        <div class="list-item-text">
+            <button type="button" class="button button-first">Забрать отсюда</button>
+        </div>
+    </div>
+</script>

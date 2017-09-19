@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Личный кабинет - информация | Даджет</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href=/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+    <!--build:css css/lib.min.css-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="js/plugins/lightbox/css/lightbox.css">
+    <!-- endbuild -->
+    <!--build:css css/main.min.css-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <!-- endbuild -->
+</head>
+
+<body class="page-profile">
+
+<div class="wrapper">
+
+    <div class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="menu-top">
+                    <a href="#" class="menu-item" title="Доставка">Доставка</a>
+                    <a href="#" class="menu-item" title="Оплата">Оплата</a>
+                    <a href="#" class="menu-item" title="Где мой заказ">Где мой заказ</a>
+                    <a href="#" class="menu-item" title="Адреса магазинов">Адреса магазинов</a>
+                    <a href="#" class="menu-item" title="Гарантии">Гарантии</a>
+                    <div class="menu-item menu-lang">
+                        <a href="#" class="link link-image" title="Русский">
+                            <svg class="icon icon-countries-russia"><use xlink:href="images/icons.svg#countries-russia"></use></svg>
+                        </a>
+                        <a href="#" class="link link-image" title="Казахский">
+                            <svg class="icon icon-countries-kazakhstan"><use xlink:href="images/icons.svg#countries-kazakhstan"></use></svg>
+                        </a>
+                        <a href="#" class="link link-image" title="Белорусский">
+                            <svg class="icon icon-countries-belarus"><use xlink:href="images/icons.svg#countries-belarus"></use></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-base">
+            <div class="container">
+                <div class="header-toggle">
+                    <button class="button button-menu" data-toggle="modal" data-target="#modal-header">
+                        <svg class="icon icon-icon-menu"><use xlink:href="images/icons.svg#icon-menu"></use></svg>
+                    </button>
+                </div>
+                <div class="header-logo">
+
+                    <!--На главной просто картинка без ссылки-->
+                    <a href="index.html" class="link-image" title="Даджет">
+                        <img src="images/logo.svg" title="Даджет" alt="Даджет">
+                    </a>
+                    <!---->
+
+                </div>
+                <div class="header-item header-cities">
+                    <svg class="icon icon-icon-map-marker"><use xlink:href="images/icons.svg#icon-map-marker"></use></svg>
+                    <select name="select" data-header="Выбор города" data-cities>
+                        <option value="1">Москва</option>
+                    </select>
+                </div>
+                <div class="header-item header-phone">
+                    <a href="tel:88001001233" class="link" title="Позвонить">
+                        <svg class="icon icon-icon-phone"><use xlink:href="images/icons.svg#icon-phone"></use></svg>
+                        <span>8 800 100-12-33</span>
+                    </a>
+                </div>
+                <div class="header-item header-callback">
+                    <span class="link" data-toggle="modal" data-target="#modal-callback">
+                        <svg class="icon icon-icon-phone"><use xlink:href="images/icons.svg#icon-phone"></use></svg>
+                        <span>Обратный звонок</span>
+                    </span>
+                </div>
+                <div class="header-item header-profile">
+                    <a href="profile-data.html" class="link" title="Личный кабинет">
+                        <svg class="icon icon-icon-user"><use xlink:href="images/icons.svg#icon-user"></use></svg>
+                        <span>Личный кабинет</span>
+                    </a>
+                </div>
+                <div class="header-cart">
+                    <a href="cart.html" class="link link-image" title="Перейти в корзину">
+                        <svg class="icon icon-icon-cart"><use xlink:href="images/icons.svg#icon-cart"></use></svg>
+                        <span class="header-cart-qty">3</span>
+                        <span class="header-cart-sum">25 000 Р</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="content-menu">
+            <div class="container">
+
+                <!--На главной по-другому-->
+                <div class="content-overlay" data-menu-overlay="menu-catalog"></div>
+                <div class="content-menu-item menu-catalog-wrapper">
+                    <div class="menu-catalog-toggle" data-menu-toggle="menu-catalog" data-menu-overlay="#menu-catalog-overlay">
+                        <svg class="icon icon-icon-menu"><use xlink:href="images/icons.svg#icon-menu"></use></svg>
+                        Каталог товаров
+                    </div>
+                    <div class="menu-catalog" data-menu="menu-catalog">
+                        <a href="catalog.html" class="menu-item" title="Авто / Мото">Авто / Мото</a>
+                        <a href="catalog.html" class="menu-item" title="Безопасность">Безопасность</a>
+                        <a href="catalog.html" class="menu-item" title="Для дома и дачи">Для дома и дачи</a>
+                        <a href="catalog.html" class="menu-item" title="Для родителей">Для родителей</a>
+                        <a href="catalog.html" class="menu-item" title="Здоровая жизнь">Здоровая жизнь</a>
+                        <a href="catalog.html" class="menu-item" title="Аудио-видео">Аудио-видео</a>
+                        <a href="catalog.html" class="menu-item" title="Путешествия">Путешествия</a>
+                        <a href="catalog.html" class="menu-item" title="Сделай сам / DIY">Сделай сам / DIY</a>
+                        <a href="catalog.html" class="menu-item" title="Источники питания">Источники питания</a>
+                    </div>
+                </div>
+                <!---->
+
+                <div class="content-menu-item menu-special">
+                    <a href="catalog.html" class="menu-item" title="Новинки">Новинки</a>
+                    <a href="catalog.html" class="menu-item" title="Хиты">Хиты</a>
+                    <a href="catalog.html" class="menu-item" title="Подарки">Подарки</a>
+                    <a href="catalog.html" class="menu-item" title="Новогодние">Новогодние</a>
+                    <a href="catalog.html" class="menu-item" title="Коллекция 2018!">Коллекция 2018!</a>
+                </div>
+                <div class="content-search">
+                    <form id="form-search" action="search.html">
+                        <input type="text" name="search" class="form-control">
+                        <button type="submit" class="button">
+                            <svg class="icon icon-icon-search"><use xlink:href="images/icons.svg#icon-search"></use></svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+<div class="breadcrumbs">
+    <div class="container">
+        <a href="index.html">Главная</a>
+        <i class="separator"></i>
+        <span>Личный кабинет</span>
+    </div>
+</div>
+
+<div class="content-row">
+    <div class="container">
+        <div class="content-row-header">
+            <div class="content-row-heading">
+                Личный кабинет
+            </div>
+        </div>
+        <div class="content-row-body profile-data">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="profile-menu menu-profile">
+                        <a href="profile-orders.html" class="menu-item" title="Мои заказы">Мои заказы</a>
+                        <span class="menu-item">Личные данные</span>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6">
+                    <div class="form">
+                        <div class="profile-data-row">
+                            <div class="profile-data-def">Электронная почта</div>
+                            <div class="profile-data-term">
+                                <div class="profile-data-value">email@example.com</div>
+                                <button type="button" class="button button-icon" data-profile-toggle>
+                                    <svg class="icon icon-icon-pencil"><use xlink:href="images/icons.svg#icon-pencil"></use></svg>
+                                </button>
+                                <form class="form-profile profile-data-form">
+                                    <div class="form-group">
+                                        <input type="email" name="email" class="form-control" value="email@example.com" required>
+                                    </div>
+                                    <div class="form-submit">
+                                        <button type="reset" class="button button-second">Отмена</button>
+                                        <button type="submit" class="button button-second">Сохранить</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="profile-data-row">
+                            <div class="profile-data-def">Пароль</div>
+                            <div class="profile-data-term">
+                                <div class="profile-data-value">******</div>
+                                <button type="button" class="button button-icon" data-profile-toggle>
+                                    <svg class="icon icon-icon-pencil"><use xlink:href="images/icons.svg#icon-pencil"></use></svg>
+                                </button>
+                                <form class="form-profile profile-data-form">
+                                    <div class="form-group">
+                                        <input type="password" name="password_old" class="form-control" placeholder="Старый пароль" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" name="password_new1" class="form-control" placeholder="Новый пароль" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" name="password_new2" class="form-control" placeholder="Подтвердите пароль" required>
+                                    </div>
+                                    <div class="form-submit">
+                                        <button type="reset" class="button button-second">Отмена</button>
+                                        <button type="submit" class="button button-second">Сохранить</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="profile-data-row">
+                            <div class="profile-data-def">Имя</div>
+                            <div class="profile-data-term">
+                                <div class="profile-data-value">Александр</div>
+                                <button type="button" class="button button-icon" data-profile-toggle>
+                                    <svg class="icon icon-icon-pencil"><use xlink:href="images/icons.svg#icon-pencil"></use></svg>
+                                </button>
+                                <form class="form-profile profile-data-form">
+                                    <div class="form-group">
+                                        <input type="text" name="firstname" class="form-control" value="Александр" required>
+                                    </div>
+                                    <div class="form-submit">
+                                        <button type="reset" class="button button-second">Отмена</button>
+                                        <button type="submit" class="button button-second">Сохранить</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="profile-data-row">
+                            <div class="profile-data-def">Фамилия</div>
+                            <div class="profile-data-term">
+                                <div class="profile-data-value">Пушкин</div>
+                                <button type="button" class="button button-icon" data-profile-toggle>
+                                    <svg class="icon icon-icon-pencil"><use xlink:href="images/icons.svg#icon-pencil"></use></svg>
+                                </button>
+                                <form class="form-profile profile-data-form">
+                                    <div class="form-group">
+                                        <input type="text" name="lastname" class="form-control" value="Пушкин" required>
+                                    </div>
+                                    <div class="form-submit">
+                                        <button type="reset" class="button button-second">Отмена</button>
+                                        <button type="submit" class="button button-second">Сохранить</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="profile-data-row">
+                            <div class="profile-data-def">Телефон</div>
+                            <div class="profile-data-term">
+                                <div class="profile-data-value">8 916 555-88-99</div>
+                                <button type="button" class="button button-icon" data-profile-toggle>
+                                    <svg class="icon icon-icon-pencil"><use xlink:href="images/icons.svg#icon-pencil"></use></svg>
+                                </button>
+                                <form class="form-profile profile-data-form">
+                                    <div class="form-group">
+                                        <input type="text" name="phone" class="form-control" value="8 916 555-88-99" data-mask="phone" required>
+                                    </div>
+                                    <div class="form-submit">
+                                        <button type="reset" class="button button-second">Отмена</button>
+                                        <button type="submit" class="button button-second">Сохранить</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="profile-data-row">
+                            <div class="profile-data-def">Дата рождения</div>
+                            <div class="profile-data-term">
+                                <div class="profile-data-value">06.06.1799</div>
+                                <button type="button" class="button button-icon" data-profile-toggle>
+                                    <svg class="icon icon-icon-pencil"><use xlink:href="images/icons.svg#icon-pencil"></use></svg>
+                                </button>
+                                <form class="form-profile profile-data-form">
+                                    <div class="form-group">
+                                        <input type="text" name="birthday" class="form-control datepicker" value="06.06.1799" required>
+                                    </div>
+                                    <div class="form-submit">
+                                        <button type="reset" class="button button-second">Отмена</button>
+                                        <button type="submit" class="button button-second">Сохранить</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form profile-data-address">
+                        <div class="form-label">
+                            Адрес доставки
+                        </div>
+                        <div class="form-group">г. Москва, м. Бауманская, ул. Земляной Вал, 12, кв. 123</div>
+                        <div class="form-group">
+                            <button class="button button-first" data-toggle="modal" data-target="#modal-address">Изменить адрес доставки</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="contacts-subscribe profile-subscibe">
+                        <form id="form-subscribe" class="form">
+                            <div class="form-content">
+                                <div class="heading">
+                                    Подпишись на новостную рассылку!
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="email" class="form-control" placeholder="Email" required>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="button button-second">Подписаться</button>
+                                </div>
+                            </div>
+                            <div class="form-success">
+                                Спасибо!<br>
+                                Ваша заявка успешно отправлена.<br>
+                                Наш менеджер свяжется с вами<br>
+                                в течение 30 минут
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="container">
+        <div class="footer-menu menu-footer">
+            <div class="heading" data-accordion-toggle="footer-menu-1">
+                О компании
+            </div>
+            <div class="menu-container" data-accordion="footer-menu-1">
+                <a href="#" class="menu-item" title="Миссия">Миссия</a>
+                <a href="#" class="menu-item" title="Качество">Качество</a>
+                <a href="#" class="menu-item" title="Гарантия">Гарантия</a>
+                <a href="#" class="menu-item" title="Вакансии">Вакансии</a>
+                <a href="#" class="menu-item" title="Контакты">Контакты</a>
+            </div>
+        </div>
+        <div class="footer-menu menu-footer">
+            <div class="heading" data-accordion-toggle="footer-menu-2">
+                Помощь
+            </div>
+            <div class="menu-container" data-accordion="footer-menu-2">
+                <a href="#" class="menu-item" title="Бонусная программа">Бонусная программа</a>
+                <a href="#" class="menu-item" title="Возврат товара">Возврат товара</a>
+                <a href="#" class="menu-item" title="Техническия консультация">Техническия консультация</a>
+                <a href="#" class="menu-item" title="Обратная связь">Обратная связь</a>
+                <a href="#" class="menu-item" title="Обработка персональных данных">Обработка персональных данных</a>
+            </div>
+        </div>
+        <div class="footer-menu menu-footer">
+            <div class="heading" data-accordion-toggle="footer-menu-3">
+                Сотрудничество
+            </div>
+            <div class="menu-container" data-accordion="footer-menu-3">
+                <a href="#" class="menu-item" title="Оптовые закупки">Оптовые закупки</a>
+                <a href="#" class="menu-item" title="Блогерам и СМИ">Блогерам и СМИ</a>
+                <a href="#" class="menu-item" title="По вопросам рекламы">По вопросам рекламы</a>
+                <a href="#" class="menu-item" title="Франчайзинг">Франчайзинг</a>
+            </div>
+        </div>
+        <div class="footer-contacts">
+            <div class="footer-contacts-item">
+                <svg class="icon icon-icon-phone"><use xlink:href="images/icons.svg#icon-phone"></use></svg>
+                <div class="heading">
+                    <a href="tel:88001001233" rel="nofollow" title="Позвонить">8 800 100-12-33</a>
+                </div>
+                Звонок по России бесплатный
+            </div>
+            <div class="footer-contacts-item">
+                <svg class="icon icon-icon-envelope"><use xlink:href="images/icons.svg#icon-envelope"></use></svg>
+                <div class="heading">
+                    <a href="mailto:info@dadget.ru" rel="nofollow" title="Написать письмо">info@dadget.ru</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <div class="footer-copy-text">
+                Dadget, 2017
+            </div>
+            <a href="#" class="footer-copy-logo" target="_blank" rel="nofollow" title="Разработчик">
+                <img src="images/magnitmedia.svg" title="MagnitMedia" alt="MagnitMedia">
+            </a>
+        </div>
+    </div>
+</div>
+
+</div><!--/.content-->
+
+</div><!--/.wrapper-->
+
+<div class="modal fade" id="modal-callback">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-title">
+                <button type="button" class="button button-back" data-dismiss="modal" title="Закрыть">
+                    <svg class="icon icon-arrow-back"><use xlink:href="images/icons.svg#arrow-back"></use></svg>
+                </button>
+                Заказать обратный звонок
+                <button type="button" class="button button-close" data-dismiss="modal" title="Закрыть">
+                    <svg class="icon icon-icon-close"><use xlink:href="images/icons.svg#icon-close"></use></svg>
+                </button>
+            </div>
+            <form id="form-callback">
+                <div class="form-content">
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-control" placeholder="Имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="phone" class="form-control" placeholder="Телефон" data-mask="phone" required>
+                    </div>
+                    <div class="modal-tip">
+                        Наш специалист свяжется с Вами в течение 30 минут
+                    </div>
+                    <div class="form-submit">
+                        <button type="submit" class="button button-second">Отправить</button>
+                    </div>
+                </div>
+                <div class="form-success">
+                    Спасибо!<br>
+                    Ваша заявка успешно отправлена.<br>
+                    Наш менеджер свяжется с вами<br>
+                    в течение 30 минут
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-question">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-title">
+                <button type="button" class="button button-back" data-dismiss="modal" title="Закрыть">
+                    <svg class="icon icon-arrow-back"><use xlink:href="images/icons.svg#arrow-back"></use></svg>
+                </button>
+                Задать вопрос
+                <button type="button" class="button button-close" data-dismiss="modal" title="Закрыть">
+                    <svg class="icon icon-icon-close"><use xlink:href="images/icons.svg#icon-close"></use></svg>
+                </button>
+            </div>
+            <form id="form-question">
+                <div class="form-content">
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-control" placeholder="Имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-control" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="question" class="form-control" placeholder="Ваш вопрос"></textarea>
+                    </div>
+                    <div class="form-submit">
+                        <button type="submit" class="button button-second">Отправить</button>
+                    </div>
+                </div>
+                <div class="form-success">
+                    Спасибо!<br>
+                    Ваша заявка успешно отправлена.<br>
+                    Наш менеджер свяжется с вами<br>
+                    в течение 30 минут
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-review">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-title">
+                <button type="button" class="button button-back" data-dismiss="modal" title="Закрыть">
+                    <svg class="icon icon-arrow-back"><use xlink:href="images/icons.svg#arrow-back"></use></svg>
+                </button>
+                Добавить отзыв
+                <button type="button" class="button button-close" data-dismiss="modal" title="Закрыть">
+                    <svg class="icon icon-icon-close"><use xlink:href="images/icons.svg#icon-close"></use></svg>
+                </button>
+            </div>
+            <form id="form-review">
+                <div class="form-content">
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-control" placeholder="Имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-control" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-control" placeholder="Заголовок">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="question" class="form-control" placeholder="Ваш отзыв"></textarea>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <div class="input-rating-wrapper">
+                                    <span class="heading">Оцените</span>
+                                    <label class="input-rating">
+                                        <input type="radio" name="rating">
+                                        <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                    </label>
+                                    <label class="input-rating">
+                                        <input type="radio" name="rating">
+                                        <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                    </label>
+                                    <label class="input-rating">
+                                        <input type="radio" name="rating">
+                                        <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                    </label>
+                                    <label class="input-rating">
+                                        <input type="radio" name="rating" checked>
+                                        <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                    </label>
+                                    <label class="input-rating">
+                                        <input type="radio" name="rating">
+                                        <svg class="icon icon-icon-star"><use xlink:href="images/icons.svg#icon-star"></use></svg>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-submit">
+                                <button type="submit" class="button button-second">Отправить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-success">
+                    Спасибо!<br>
+                    Ваша заявка успешно отправлена.<br>
+                    Наш менеджер свяжется с вами<br>
+                    в течение 30 минут
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-header">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-title">
+                <button type="button" class="button button-close" data-dismiss="modal" title="Закрыть">
+                    <svg class="icon icon-icon-close"><use xlink:href="images/icons.svg#icon-close"></use></svg>
+                </button>
+            </div>
+            <div class="header-mobile">
+                <div class="header-mobile-item">
+                    <p data-toggle="modal" data-target="#modal-cities">
+                        <svg class="icon icon-icon-map-marker"><use xlink:href="images/icons.svg#icon-map-marker"></use></svg>
+                        Город: Москва
+                    </p>
+                    <p>
+                        <svg class="icon icon-icon-globe"><use xlink:href="images/icons.svg#icon-globe"></use></svg>
+                        Страна: Россия
+                    </p>
+                </div>
+                <div class="header-mobile-item menu-mobile">
+                    <div class="heading">
+                        Каталог
+                    </div>
+                    <div class="menu-container">
+                        <a href="catalog.html" class="menu-item" title="Новинки">Новинки</a>
+                        <a href="catalog.html" class="menu-item" title="Хиты">Хиты</a>
+                        <a href="catalog.html" class="menu-item" title="Подарки">Подарки</a>
+                        <a href="catalog.html" class="menu-item" title="Новогодние">Новогодние</a>
+                        <a href="catalog.html" class="menu-item" title="Коллекция 2018!">Коллекция 2018!</a>
+                    </div>
+                </div>
+                <div class="header-mobile-item menu-mobile">
+                    <div class="menu-container">
+                        <a href="#" class="menu-item" title="Доставка">Доставка</a>
+                        <a href="#" class="menu-item" title="Оплата">Оплата</a>
+                        <a href="#" class="menu-item" title="Где мой заказ">Где мой заказ</a>
+                        <a href="#" class="menu-item" title="Адреса магазинов">Адреса магазинов</a>
+                        <a href="#" class="menu-item" title="Гарантии">Гарантии</a>
+                    </div>
+                </div>
+                <div class="header-mobile-item">
+                    <p>
+                        <a href="tel:88001001233" class="link">8 800 100-12-33</a>
+                    </p>
+                    <p>
+                        <span class="link" data-toggle="modal" data-target="#modal-callback">
+                            <svg class="icon icon-icon-phone"><use xlink:href="images/icons.svg#icon-phone"></use></svg>
+                            <span>Обратный звонок</span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-cities">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-title">
+                <button type="button" class="button button-back" data-dismiss="modal" title="Закрыть">
+                    <svg class="icon icon-arrow-back"><use xlink:href="images/icons.svg#arrow-back"></use></svg>
+                </button>
+                Выбор города
+                <button type="button" class="button button-close" data-dismiss="modal" title="Закрыть">
+                    <svg class="icon icon-icon-close"><use xlink:href="images/icons.svg#icon-close"></use></svg>
+                </button>
+            </div>
+            <div class="form-group">
+                <input type="text" id="cities-autocomplete" name="search" class="form-control" placeholder="Введите название города">
+            </div>
+            <div id="cities-autocomplete-results"></div>
+        </div>
+    </div>
+</div>
+
+<div class="modal modal-address fade" id="modal-address">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-title">
+                <button type="button" class="button button-back" data-dismiss="modal" title="Закрыть">
+                    <svg class="icon icon-arrow-back"><use xlink:href="images/icons.svg#arrow-back"></use></svg>
+                </button>
+                Изменить адрес доставки
+                <button type="button" class="button button-close" data-dismiss="modal" title="Закрыть">
+                    <svg class="icon icon-icon-close"><use xlink:href="images/icons.svg#icon-close"></use></svg>
+                </button>
+            </div>
+            <form id="form-address">
+                <div class="form-content">
+                    <div class="form-group">
+                        <input type="text" name="city" class="form-control" placeholder="Город" value="Москва" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="street" class="form-control" placeholder="Улица" value="Тверская" required>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" name="zip" class="form-control" placeholder="Индекс" value="107140" data-mask="zip" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" name="building" class="form-control" placeholder="Дом" value="1" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" name="block1" class="form-control" placeholder="Корпус" value="2" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" name="apartment" class="form-control" placeholder="Квартира" value="13" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-md-offset-6">
+                            <div class="form-submit">
+                                <button type="submit" class="button button-second">Сохранить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-success">
+                    Спасибо!<br>
+                    Ваша заявка успешно отправлена.<br>
+                    Наш менеджер свяжется с вами<br>
+                    в течение 30 минут
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal modal-quickview fade" id="modal-quickview">
+    <div class="modal-dialog">
+        <div class="modal-content"></div>
+    </div>
+</div>
+<div class="menu-pages-toggle" data-menu-toggle="menu-pages">
+    Страницы
+</div>
+<div class="menu-pages menu-highlighted" data-menu="menu-pages">
+    <a href="index.html" class="menu-item">home</a>
+    <a href="catalog.html" class="menu-item separator">catalog</a>
+    <a href="catalog-item.html" class="menu-item">catalog-item</a>
+    <a href="search.html" class="menu-item">search</a>
+    <a href="cart.html" class="menu-item separator">cart</a>
+    <a href="cart-success.html" class="menu-item">cart-success</a>
+    <a href="news.html" class="menu-item separator">news</a>
+    <a href="news-item.html" class="menu-item">news-item</a>
+    <a href="profile-orders.html" class="menu-item separator">profile-orders</a>
+    <a href="profile-data.html" class="menu-item">profile-data</a>
+    <a href="contacts.html" class="menu-item separator">contacts</a>
+    <a href="404.html" class="menu-item">404</a>
+    <a href="ui.html" class="menu-item">ui</a>
+</div>
+
+<script>
+    var currentCityId = 1;
+    var currentCityName = "Москва";
+    var iconPlus = '<svg class="icon icon-icon-plus"><use xlink:href="images/icons.svg#icon-plus"></use></svg>';
+    var iconMinus = '<svg class="icon icon-icon-minus"><use xlink:href="images/icons.svg#icon-minus"></use></svg>';
+    var carouselHomeArrowPrev = '<button type="button" class="slick-prev"><svg class="icon icon-arrow-back"><use xlink:href="images/icons.svg#arrow-back"></use></svg></button>';
+    var carouselHomeArrowNext = '<button type="button" class="slick-next"><svg class="icon icon-arrow-forward"><use xlink:href="images/icons.svg#arrow-forward"></use></svg></button>';
+    var carouselProductArrowPrev = '<button type="button" class="slick-prev"><svg class="icon icon-arrow-left"><use xlink:href="images/icons.svg#arrow-left"></use></svg></button>';
+    var carouselProductArrowNext = '<button type="button" class="slick-next"><svg class="icon icon-arrow-right"><use xlink:href="images/icons.svg#arrow-right"></use></svg></button>';
+</script>
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+
+<!--build:js js/jquery.min.js -->
+<script src="js/jquery.js"></script>
+<!-- endbuild -->
+<!--build:js js/jquery-ui.min.js -->
+<script src="js/ui/jquery-ui.js"></script>
+<script src="js/ui/i18n/datepicker-ru.js"></script>
+<!-- endbuild -->
+<!--build:js js/lib.min.js -->
+<script src="js/svg4everybody.js"></script>
+<script src="js/mustache.js"></script>
+<script src="js/plugins/select2.js"></script>
+<script src="js/plugins/tooltipster.bundle.js"></script>
+<script src="js/plugins/slick.js"></script>
+<script src="js/plugins/spritespin.js"></script>
+<script src="js/plugins/lightbox/js/lightbox.js"></script>
+<script src="js/plugins/jquery.easing.js"></script>
+<script src="js/plugins/jquery.validate.js"></script>
+<script src="js/plugins/jquery.maskedinput.js"></script>
+<script src="js/bootstrap/transition.js"></script>
+<script src="js/bootstrap/modal.js"></script>
+<!-- endbuild -->
+<!--build:js js/main.min.js -->
+<script src="js/project/project.js"></script>
+<script src="js/project/menu.js"></script>
+<script src="js/project/menu-highlighted.js"></script>
+<script src="js/project/validator.js"></script>
+<script src="js/project/accordion.js"></script>
+<script src="js/project/placeholder.js"></script>
+<script src="js/project/scrollto.js"></script>
+<script src="js/project/text-toggle.js"></script>
+<script src="js/project/tabs.js"></script>
+<script src="js/project/input-checkbox.js"></script>
+<script src="js/project/input-radio.js"></script>
+<script src="js/project/input-number.js"></script>
+<script src="js/project/input-rating.js"></script>
+<script src="js/pages/home.js"></script>
+<script src="js/pages/catalog.js"></script>
+<script src="js/pages/common.js"></script>
+<script src="js/pages/product.js"></script>
+<script src="js/pages/contacts.js"></script>
+<script src="js/pages/cart.js"></script>
+<script src="js/pages/profile.js"></script>
+<script src="js/pages/news.js"></script>
+<!-- endbuild -->
+
+<!--[if lte IE 9]>
+<script src="js/plugins/jquery.placeholder.js"></script>
+<![endif]-->
+
+</body>
+</html>
