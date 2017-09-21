@@ -1,0 +1,54 @@
+/*Countdown
+------------------------------------*/
+
+.countdown {
+   background: #3e3737;
+   color: #fed200;
+   font-size: 18px;
+   padding: 28px 20px 16px 38px !important;
+}
+.countdown span {
+   margin: 0;   
+}
+#countdown { 
+	width: 100%;
+	overflow: hidden;
+}
+
+#countdown span.countdown_row {
+	overflow: hidden;
+   margin: 0;
+}
+
+#countdown span.countdown-section {
+	margin: 10px 20px 0 0;
+	padding: 0px 0;
+	text-align: center;
+	display: inline-block;
+   color: #fed200;
+   
+}
+#countdown span.countdown-amount,
+#countdown span.countdown-amount:after {
+   font-family: "Intro-Bold";
+   font-size: 50px;
+   line-height: 46px;
+}
+#countdown span.countdown-amount{
+   position: relative;   
+   float: left;
+}
+#countdown span.countdown-amount:after {
+   position: absolute;
+   bottom:0;
+   right:-18px;
+   content: ":";
+}
+#countdown span.countdown-section:last-child span.countdown-amount:after {
+   content: "";
+}
+
+#countdown span.countdown-period {
+	display: block;
+	font-size: 12px;
+}

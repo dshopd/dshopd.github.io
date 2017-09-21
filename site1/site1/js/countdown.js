@@ -1,0 +1,1 @@
+$(document).ready(function(){function serverTime(){var time=null;$.ajax({url:'http://skandinavskiy.ru/serverTime.php',async:false,dataType:'text',success:function(text){time=new Date(text);},error:function(http,message,exc){time=new Date();}});return time;}var timeX=new Date(2017,8,21 ,10,0,0);$('#countdown').countdown({until:timeX,serverSync:serverTime,})});
