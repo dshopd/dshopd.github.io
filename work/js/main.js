@@ -5,7 +5,7 @@ $('.slick-animation').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: true,
-  speed: 100,
+  speed: 300,
   fade: true,
   cssEase: 'linear',
   initialSlide: 1,
