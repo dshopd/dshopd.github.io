@@ -1,0 +1,49 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.header {
+	max-width: 1280px;
+	margin: 0 auto;
+	background: #fff;
+}
+
+.header__logo {
+	float: left;
+}
+
+.header__logo img {
+	width: 84px;
+	height: 42px;
+}
+
+.header__nav {
+	float: right;
+	padding: 23px 0;
+	margin-right: 22px;
+	width: 489px;
+	text-align: center;
+}
+
+.header__nav a {
+	font-size: 16px;
+	color: #333333;
+	text-decoration: none;
+	display: inline-block;
+	margin: 0 10px;
+}
+
+.header__button {
+	float: right;
+	padding: 23px 0 23px 0;
+
+}
+.header__button a {
+	font-size: 16px;
+	color: #333333;
+	text-decoration: none;
+	border: 1px solid #55A462;
+	padding: 4px;
+}
